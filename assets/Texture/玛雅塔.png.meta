@@ -1,0 +1,32 @@
+{
+  "ver": "2.3.1",
+  "uuid": "7614d677-6803-40af-9470-27293f43df84",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "platformSettings": {},
+  "subMetas": {
+    "玛雅塔": {
+      "ver": "1.0.4",
+      "uuid": "ae6a7591-4cf4-4944-9b20-c2106611855c",
+      "rawTextureUuid": "7614d677-6803-40af-9470-27293f43df84",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 12,
+      "trimY": 14,
+      "width": 176,
+      "height": 172,
+      "rawWidth": 200,
+      "rawHeight": 200,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

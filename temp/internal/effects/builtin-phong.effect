@@ -1,0 +1,43 @@
+%{
+  techniques: [
+    {
+      passes: [
+        {
+          vert: phong-vs
+          frag: phong-fs
+          stage: forward
+          cullMode: back
+          depthTest: true
+          depthWrite: true
+        }
+      ]
+    }
+    {
+      stages: [ 'shadowcast' ]
+      passes: [
+        {
+          vert: shadow-depth-vs
+          frag: shadow-depth-fs
+          stage: shadowcast
+          cullMode: back
+          depthTest: true
+          depthWrite: true
+        }
+      ]
+    }
+  ]
+
+  properties: {
+    mainTiling: { type: 'vec2', value: [1, 1] }
+    mainOffset: { type: 'vec2', value: [0, 0] }
+    diffuseColor: { type: 'color4', value: [1, 1, 1, 1] }
+    diffuseTexture: { type: 'sampler2D', value: null }
+    specularColor: { type: 'color3', value: [1, 1, 1] }
+    specularTexture: { type: 'sampler2D', value: null }
+    emissiveColor: { type: 'color3', value: [0, 0, 0] }
+    emissiveTexture: { type: 'sampler2D', value: null }
+    glossiness: { type: 'float', value: 10 }
+    normalTexture: { type: 'sampler2D', value: null }
+    alphaThreshold: { type: 'float', value: 0 }
+  }
+%}

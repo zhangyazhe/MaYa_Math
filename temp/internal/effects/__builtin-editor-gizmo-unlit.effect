@@ -1,0 +1,51 @@
+
+%{
+  "techniques": [
+    {
+      "stages": [
+        "transparent"
+      ],
+      "passes": [
+        {
+          "vert": "line-vs",
+          "frag": "line-fs:front",
+          "cullMode": "none",
+          "blend": true,
+          "blendEq": "add",
+          "blendSrc": "srcAlpha",
+          "blendDst": "oneMinusSrcAlpha",
+        }
+      ]
+    }
+  ],
+
+  "properties": {
+    "diffuseColor": {
+      "type": "color4",
+      "value": [1, 1, 1, 1]
+    }
+  }
+%}
+
+%% line-vs {
+  precision highp float;
+
+  attribute vec3 a_position;
+
+  #include <cc-global>
+  #include <cc-local>
+
+  void main () {
+    gl_Position = cc_matViewProj * cc_matWorld * vec4(a_position, 1);
+  }
+}
+
+%% line-fs {
+  precision highp float;
+  
+  #include <encodings>
+  uniform vec4 diffuseColor;
+  vec4 front() {
+    return LINEAR_TO_OUTPUT_TEXEL(diffuseColor);
+  }
+}

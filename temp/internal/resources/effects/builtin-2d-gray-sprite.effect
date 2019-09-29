@@ -1,0 +1,57 @@
+// Copyright (c) 2017-2018 Xiamen Yaji Software Co., Ltd.  
+
+%{
+  techniques: [
+    {
+      passes: [
+        {
+          vert: vs
+          frag: fs
+          cullMode: none
+          blend: true
+        }
+      ]
+      layer: 0
+    }
+  ]
+  properties: {
+    texture: {
+      type: sampler2D
+      value: null
+    }
+  }
+%}
+
+%% vs {
+
+precision highp float;
+
+uniform mat4 cc_matViewProj;
+attribute vec3 a_position;
+attribute mediump vec2 a_uv0;
+varying mediump vec2 v_uv0;
+
+void main () {
+  gl_Position = cc_matViewProj * vec4(a_position, 1);
+  v_uv0 = a_uv0;
+}
+
+}
+
+%% fs {
+
+precision highp float;
+
+uniform sampler2D texture;
+varying mediump vec2 v_uv0;
+
+void main () {
+  vec4 color = texture2D(texture, v_uv0);
+  #if _USE_ETC1_TEXTURE
+      color.a *= texture2D(texture, v_uv0 + vec2(0, 0.5)).r;
+  #endif
+  float gray = 0.2126*color.r + 0.7152*color.g + 0.0722*color.b;
+  gl_FragColor = vec4(gray, gray, gray, color.a);
+}
+
+}

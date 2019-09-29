@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "玛雅塔",
+    "texture": "7614d677-6803-40af-9470-27293f43df84",
+    "atlas": "",
+    "rect": [
+      12,
+      14,
+      176,
+      172
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
