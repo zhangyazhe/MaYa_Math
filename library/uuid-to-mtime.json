@@ -810,8 +810,8 @@
     "relativePath": "Texture\\right.png"
   },
   "e03dfb13-32bc-4aab-898f-a4146eecad3b": {
-    "asset": 1570347632000,
-    "meta": 1570350210946,
+    "asset": 1570378681711,
+    "meta": 1570378681729,
     "relativePath": "Scene\\lxybegin.fire"
   },
   "25d0741b-9745-4d85-ae77-04291015481d": {
@@ -1325,13 +1325,13 @@
     "relativePath": "resources\\1\\1086.png"
   },
   "90e0e6ac-b3e6-4d90-971a-b8fb2f7de2bd": {
-    "asset": 1570347632000,
-    "meta": 1570350210941,
+    "asset": 1570378113808,
+    "meta": 1570378113818,
     "relativePath": "Scene\\error_list.fire"
   },
   "0b75cf7b-246f-4553-a016-b1b2fa4ed066": {
-    "asset": 1570347632000,
-    "meta": 1570350211328,
+    "asset": 1570378619055,
+    "meta": 1570378622494,
     "relativePath": "Script\\errorscript.js"
   }
 }

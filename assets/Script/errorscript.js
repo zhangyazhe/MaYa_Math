@@ -5,6 +5,16 @@ cc.Class({
         questionList:{
             default: null,
             type: cc.Node
+        },
+		
+		CurrentNum:{
+            default: null,
+            type: cc.Label
+        },
+		
+		TotalNum:{
+            default: null,
+            type: cc.Label
         }
     },
 
@@ -29,6 +39,8 @@ cc.Class({
 	
     ErrorQuestion:function(i){
         var questionNum = Math.round(this.error_list[i] + 1001);
+		this.CurrentNum.string = (i+1).toString();
+		this.TotalNum.string = this.error_list.length.toString(); 
 		var url = "1/" + questionNum.toString();
 		cc.loader.loadRes(url, cc.SpriteFrame, (err, res) => {
             //加载错误则报错

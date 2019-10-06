@@ -1,69 +1,91 @@
-2019-10-06T08:24:13.775Z - normal: Load ~/.CocosCreator/settings.json
-2019-10-06T08:24:14.921Z - normal: Initializing Asset Database
-2019-10-06T08:24:14.925Z - normal: checking language setting...
-2019-10-06T08:24:14.925Z - normal: Language: zh
-2019-10-06T08:24:15.688Z - success: preview server running at http://localhost:7456
-2019-10-06T08:24:15.692Z - success: protocol editor-framework registered
-2019-10-06T08:24:15.692Z - success: protocol app registered
-2019-10-06T08:24:15.692Z - success: protocol theme registered
-2019-10-06T08:24:15.692Z - success: protocol packages registered
-2019-10-06T08:24:15.692Z - success: protocol uuid registerred
-2019-10-06T08:24:15.692Z - success: protocol db registerred
-2019-10-06T08:24:15.692Z - success: protocol thumbnail registerred
-2019-10-06T08:24:15.692Z - success: protocol unpack registerred
-2019-10-06T08:24:15.692Z - success: protocol disable-commonjs registerred
-2019-10-06T08:24:16.143Z - normal: connected!
-2019-10-06T08:24:16.144Z - normal: Check project C:\Users\p1o1s1\Desktop\MaYa_Math
-2019-10-06T08:24:16.146Z - normal: Initializing project C:\Users\p1o1s1\Desktop\MaYa_Math
-2019-10-06T08:24:16.568Z - normal: Initializing Cocos2d
-2019-10-06T08:24:17.525Z - normal: Initializing engine extends
-2019-10-06T08:24:17.547Z - success: asset-db-debugger loaded
-2019-10-06T08:24:17.549Z - success: baidu-adapter loaded
-2019-10-06T08:24:17.550Z - success: color-picker loaded
-2019-10-06T08:24:17.650Z - success: fb-audience-network loaded
-2019-10-06T08:24:17.719Z - success: fb-live-stream loaded
-2019-10-06T08:24:17.725Z - success: google-play-instant loaded
-2019-10-06T08:24:17.731Z - success: huawei-runtime loaded
-2019-10-06T08:24:18.024Z - success: cpk-publish loaded
-2019-10-06T08:24:18.027Z - success: jsb-adapter loaded
-2019-10-06T08:24:18.036Z - success: oppo-runtime loaded
-2019-10-06T08:24:18.040Z - success: package-manager loaded
-2019-10-06T08:24:18.173Z - success: qqplay-adapter loaded
-2019-10-06T08:24:18.175Z - success: runtime-dev-tools loaded
-2019-10-06T08:24:18.180Z - success: sdkbox loaded
-2019-10-06T08:24:18.184Z - success: tester loaded
-2019-10-06T08:24:18.189Z - success: ui-grid loaded
-2019-10-06T08:24:18.192Z - success: ui-kit-preview-extra loaded
-2019-10-06T08:24:18.193Z - success: ui-kit-preview loaded
-2019-10-06T08:24:18.195Z - success: ui-kit loaded
-2019-10-06T08:24:18.197Z - success: ui-tree loaded
-2019-10-06T08:24:18.202Z - success: vivo-runtime loaded
-2019-10-06T08:24:18.203Z - success: weapp-adapter loaded
-2019-10-06T08:24:18.204Z - success: xiaomi-adapter loaded
-2019-10-06T08:24:18.257Z - success: assets loaded
-2019-10-06T08:24:18.259Z - success: builder loaded
-2019-10-06T08:24:18.566Z - success: cocos-services loaded
-2019-10-06T08:24:18.580Z - success: console loaded
-2019-10-06T08:24:18.647Z - success: fb-instant-games loaded
-2019-10-06T08:24:18.653Z - success: game-window loaded
-2019-10-06T08:24:18.660Z - success: google-instant-games loaded
-2019-10-06T08:24:18.665Z - success: hierarchy loaded
-2019-10-06T08:24:18.668Z - success: inspector loaded
-2019-10-06T08:24:18.669Z - success: keystore loaded
-2019-10-06T08:24:18.675Z - success: node-library loaded
-2019-10-06T08:24:18.676Z - success: package-asset loaded
-2019-10-06T08:24:18.677Z - success: preferences loaded
-2019-10-06T08:24:18.679Z - success: project-exporter loaded
-2019-10-06T08:24:18.681Z - success: project-importer loaded
-2019-10-06T08:24:18.684Z - success: project-settings loaded
-2019-10-06T08:24:18.690Z - success: scene loaded
-2019-10-06T08:24:18.692Z - success: simulator-debugger loaded
-2019-10-06T08:24:18.693Z - success: sprite-editor loaded
-2019-10-06T08:24:18.697Z - success: store loaded
-2019-10-06T08:24:18.704Z - success: timeline loaded
-2019-10-06T08:24:18.710Z - success: xiaomi-runtime loaded
-2019-10-06T08:24:21.288Z - normal: Loading packages
-2019-10-06T08:24:21.302Z - normal: Watching packages
-2019-10-06T08:24:22.103Z - normal: Run Application
-2019-10-06T08:24:22.398Z - info: Cocos Services load base data!
-2019-10-06T08:24:45.695Z - info: shutdown preview server
+2019-10-06T15:58:10.032Z - normal: Load ~/.CocosCreator/settings.json
+2019-10-06T15:58:11.344Z - normal: Initializing Asset Database
+2019-10-06T15:58:11.348Z - normal: checking language setting...
+2019-10-06T15:58:11.348Z - normal: Language: zh
+2019-10-06T15:58:13.104Z - success: preview server running at http://localhost:7456
+2019-10-06T15:58:13.106Z - success: protocol editor-framework registered
+2019-10-06T15:58:13.106Z - success: protocol app registered
+2019-10-06T15:58:13.106Z - success: protocol theme registered
+2019-10-06T15:58:13.106Z - success: protocol packages registered
+2019-10-06T15:58:13.106Z - success: protocol uuid registerred
+2019-10-06T15:58:13.106Z - success: protocol db registerred
+2019-10-06T15:58:13.106Z - success: protocol thumbnail registerred
+2019-10-06T15:58:13.106Z - success: protocol unpack registerred
+2019-10-06T15:58:13.106Z - success: protocol disable-commonjs registerred
+2019-10-06T15:58:13.808Z - normal: connected!
+2019-10-06T15:58:13.809Z - normal: Check project C:\Users\p1o1s1\Desktop\MaYa_Math
+2019-10-06T15:58:13.811Z - normal: Initializing project C:\Users\p1o1s1\Desktop\MaYa_Math
+2019-10-06T15:58:14.427Z - normal: Initializing Cocos2d
+2019-10-06T15:58:16.215Z - normal: Initializing engine extends
+2019-10-06T15:58:16.469Z - success: asset-db-debugger loaded
+2019-10-06T15:58:16.470Z - success: baidu-adapter loaded
+2019-10-06T15:58:16.471Z - success: color-picker loaded
+2019-10-06T15:58:16.633Z - success: fb-audience-network loaded
+2019-10-06T15:58:16.736Z - success: fb-live-stream loaded
+2019-10-06T15:58:16.745Z - success: google-play-instant loaded
+2019-10-06T15:58:16.755Z - success: huawei-runtime loaded
+2019-10-06T15:58:17.337Z - success: cpk-publish loaded
+2019-10-06T15:58:17.339Z - success: jsb-adapter loaded
+2019-10-06T15:58:17.366Z - success: oppo-runtime loaded
+2019-10-06T15:58:17.370Z - success: package-manager loaded
+2019-10-06T15:58:17.714Z - success: qqplay-adapter loaded
+2019-10-06T15:58:17.716Z - success: runtime-dev-tools loaded
+2019-10-06T15:58:17.723Z - success: sdkbox loaded
+2019-10-06T15:58:17.728Z - success: tester loaded
+2019-10-06T15:58:17.731Z - success: ui-grid loaded
+2019-10-06T15:58:17.733Z - success: ui-kit-preview-extra loaded
+2019-10-06T15:58:17.736Z - success: ui-kit-preview loaded
+2019-10-06T15:58:17.738Z - success: ui-kit loaded
+2019-10-06T15:58:17.740Z - success: ui-tree loaded
+2019-10-06T15:58:17.775Z - success: vivo-runtime loaded
+2019-10-06T15:58:17.776Z - success: weapp-adapter loaded
+2019-10-06T15:58:17.776Z - success: xiaomi-adapter loaded
+2019-10-06T15:58:17.825Z - success: assets loaded
+2019-10-06T15:58:17.828Z - success: builder loaded
+2019-10-06T15:58:18.229Z - success: cocos-services loaded
+2019-10-06T15:58:18.234Z - success: console loaded
+2019-10-06T15:58:18.264Z - success: fb-instant-games loaded
+2019-10-06T15:58:18.268Z - success: game-window loaded
+2019-10-06T15:58:18.269Z - success: google-instant-games loaded
+2019-10-06T15:58:18.275Z - success: hierarchy loaded
+2019-10-06T15:58:18.278Z - success: inspector loaded
+2019-10-06T15:58:18.279Z - success: keystore loaded
+2019-10-06T15:58:18.284Z - success: node-library loaded
+2019-10-06T15:58:18.286Z - success: package-asset loaded
+2019-10-06T15:58:18.287Z - success: preferences loaded
+2019-10-06T15:58:18.289Z - success: project-exporter loaded
+2019-10-06T15:58:18.291Z - success: project-importer loaded
+2019-10-06T15:58:18.294Z - success: project-settings loaded
+2019-10-06T15:58:18.297Z - success: scene loaded
+2019-10-06T15:58:18.299Z - success: simulator-debugger loaded
+2019-10-06T15:58:18.300Z - success: sprite-editor loaded
+2019-10-06T15:58:18.303Z - success: store loaded
+2019-10-06T15:58:18.308Z - success: timeline loaded
+2019-10-06T15:58:18.314Z - success: xiaomi-runtime loaded
+2019-10-06T15:58:20.994Z - normal: Loading packages
+2019-10-06T15:58:21.001Z - normal: Watching packages
+2019-10-06T15:58:21.548Z - normal: Run Application
+2019-10-06T15:58:21.988Z - info: Cocos Services load base data!
+2019-10-06T16:07:50.106Z - error: Node name can not include '/'.
+    at Object.cc.errorID (D:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at cc_Node.set (D:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:124:32)
+    at d (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\set-property-by-path.js:1:3997)
+    at Object.b [as setPropertyByPath] (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\set-property-by-path.js:1:5194)
+    at Object.setProperty (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\scene.js:1:8351)
+    at HTMLElement.set-property (D:\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:782)
+    at Object.e._dispatch (D:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (D:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2921)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-10-06T16:07:55.462Z - error: Node name can not include '/'.
+    at Object.cc.errorID (D:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at cc_Node.set (D:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:124:32)
+    at d (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\set-property-by-path.js:1:3997)
+    at Object.b [as setPropertyByPath] (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\set-property-by-path.js:1:5194)
+    at Object.setProperty (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\scene.js:1:8351)
+    at HTMLElement.set-property (D:\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:782)
+    at Object.e._dispatch (D:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (D:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2921)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-10-06T16:18:03.156Z - info: shutdown preview server
