@@ -37,7 +37,7 @@ cc.Class({
    },
 
    toErb: function toErb() {
-      cc.director.loadScene("main_scene");
+      cc.director.loadScene("error_list");
    }
 });
 

@@ -34,6 +34,6 @@ cc.Class({
      },
      
      toErb: function(){
-        cc.director.loadScene("main_scene")
+        cc.director.loadScene("error_list")
      }
 });

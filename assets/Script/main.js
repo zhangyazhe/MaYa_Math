@@ -37,7 +37,10 @@ cc.Class({
         //记录时间
         this.timecnt = 0;
         //记录结果
+		this.qm = 0;
+		//记录题号
         this.result_list = [];
+		this.error_list = JSON.parse(cc.sys.localStorage.getItem('userData'));
     },
 
     start () {
@@ -63,8 +66,10 @@ cc.Class({
         this.a = 0;
         this.ans = 0;
         this.seq = 1;
+		
         //初始化显示的题目
         this.generateQuestion();
+		//cc.sys.localStorage.setItem("error", error);			//储存错题
     },
 
     //随机生成题目
@@ -73,6 +78,7 @@ cc.Class({
         var questionNum = Math.round(randnum + 1001);
         var url = "1/" + questionNum.toString();
         //记录答案
+		this.qm = randnum;         //记录题号
         if(randnum >=1 && randnum <= 50){
             this.ans = this.A_DEFINE;
         }else if(randnum >=51 && randnum <= 100){
@@ -111,10 +117,12 @@ cc.Class({
             this.result_list.push(1);
         }else{
             this.result_list.push(0);
+			this.error_list.push(Math.round(this.qm));
         }
         this.refreshSeq();
         if(this.seq != 31){
             this.generateQuestion();
+			cc.log(this.error_list.toString());
         }
         
     },
@@ -130,10 +138,12 @@ cc.Class({
             this.result_list.push(1);
         }else{
             this.result_list.push(0);
+			this.error_list.push(Math.round(this.qm));
         }
         this.refreshSeq();
         if(this.seq != 31){
             this.generateQuestion();
+			cc.log(this.error_list.toString());
         }
     },
     
@@ -148,10 +158,12 @@ cc.Class({
             this.result_list.push(1);
         }else{
             this.result_list.push(0);
+			this.error_list.push(Math.round(this.qm));
         }
         this.refreshSeq();
         if(this.seq != 31){
             this.generateQuestion();
+			cc.log(this.error_list.toString());
         }
     },
 
@@ -176,6 +188,7 @@ cc.Class({
             //获取常驻结点进行场景间通信
             var node = cc.find('main_persistNode').getComponent('main_persist');
             node.setdata(this.result_list);
+			cc.sys.localStorage.setItem('userData', JSON.stringify(this.error_list));			//存储错题到本地数据库
             this.toScene();
         }else{
             this.lbSeq.string = curSeq.toString();
