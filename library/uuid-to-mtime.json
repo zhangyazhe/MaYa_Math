@@ -60,12 +60,12 @@
     "relativePath": "resources\\materials"
   },
   "29f52784-2fca-467b-92e7-8fd9ef8c57b7": {
-    "asset": 1570525920033,
+    "asset": 1570528287616,
     "meta": 1570347632000,
     "relativePath": "Scene"
   },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1570527709841,
+    "asset": 1570528294287,
     "meta": 1570347632000,
     "relativePath": "Script"
   },
@@ -489,13 +489,8 @@
     "meta": 1570350211583,
     "relativePath": "Texture\\webfont.ttf"
   },
-  "a197fdef-3f7c-4f31-a1ad-7c6d26311f7f": {
-    "asset": 1570347632000,
-    "meta": 1570350211445,
-    "relativePath": "Script\\main.js"
-  },
   "7f2a7ddf-114f-46b5-bb92-5061908ee68f": {
-    "asset": 1570526716241,
+    "asset": 1570528284961,
     "meta": 1570347632000,
     "relativePath": "Prefab"
   },
@@ -510,7 +505,7 @@
     "relativePath": "Prefab\\right.prefab"
   },
   "a9c89f2f-e506-4a5a-b9b2-3acf3faaffc8": {
-    "asset": 1570527373772,
+    "asset": 1570528294287,
     "meta": 1570347632000,
     "relativePath": "resources"
   },
@@ -989,11 +984,6 @@
     "meta": 1570524369308,
     "relativePath": "Texture\\方向右.png"
   },
-  "0b75cf7b-246f-4553-a016-b1b2fa4ed066": {
-    "asset": 1570525311419,
-    "meta": 1570525387456,
-    "relativePath": "Script\\errorscript.js"
-  },
   "719e0a7a-d05a-4b49-901d-55b144b9adc2": {
     "asset": 1570526197621,
     "meta": 1570526197649,
@@ -1191,7 +1181,7 @@
   },
   "954fec8b-cd16-4bb9-a3b7-7719660e7558": {
     "asset": 1563274076000,
-    "meta": 1570527616695,
+    "meta": 1570530281310,
     "relativePath": "model\\primitives.fbx"
   },
   "fbadd5a2-3cf4-4a55-a23c-709c3dcd6a3a": {
@@ -1399,9 +1389,19 @@
     "meta": 1570528611600,
     "relativePath": "错.jpg"
   },
+  "a197fdef-3f7c-4f31-a1ad-7c6d26311f7f": {
+    "asset": 1570533483822,
+    "meta": 1570533484997,
+    "relativePath": "Script\\main.js"
+  },
   "2d6329d7-025e-4aac-9615-ad79860654fd": {
-    "asset": 1570529603704,
-    "meta": 1570529609463,
+    "asset": 1570533521206,
+    "meta": 1570533523927,
     "relativePath": "Script\\menuscript.js"
+  },
+  "0b75cf7b-246f-4553-a016-b1b2fa4ed066": {
+    "asset": 1570533674393,
+    "meta": 1570533675909,
+    "relativePath": "Script\\errorscript.js"
   }
 }

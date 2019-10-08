@@ -11,7 +11,6 @@ cc.Class({
 	},
 	
     start () {
-		this.error_list = JSON.parse(cc.sys.localStorage.getItem('userData'));
     },
 
      toGrd1: function(){
@@ -39,10 +38,10 @@ cc.Class({
      },
      
      toErb: function(){
-		if(this.error_list.length != 0)
-			cc.director.loadScene("error_list");
-		else
+		if(this.error_list == null)
 			Alert.show("暂无错题", null, false);
+		else
+			cc.director.loadScene("error_list");
 	 }
      
 });

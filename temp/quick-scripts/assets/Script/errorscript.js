@@ -75,12 +75,12 @@ cc.Class({
 
 	Clicked_next: function Clicked_next() {
 		//下一题
-		if (this.seq != this.error_list.length) {
+		if (this.seq != this.error_list.length - 1) {
 			++this.seq;
 			this.Answer.node.active = false; //隐藏节点
 			this.ErrorQuestion(this.seq);
 			cc.log(this.error_list.toString());
-		}
+		} else Alert.show("已为最后一题", null, false);
 	},
 
 	Clicked_last: function Clicked_last() {
@@ -89,7 +89,7 @@ cc.Class({
 			//第一题不能回退
 			--this.seq;
 			this.Answer.node.active = false; //隐藏节点
-		}
+		} else Alert.show("已为第一题", null, false);
 		if (this.seq != this.error_list.length) {
 			this.ErrorQuestion(this.seq);
 			cc.log(this.error_list.toString());

@@ -47,6 +47,7 @@ cc.Class({
         //记录题号
         this.result_list = [];
         this.error_list = JSON.parse(cc.sys.localStorage.getItem('userData'));
+        if (this.error_list == null) this.error_list = [];
     },
     start: function start() {
         this.defaultGame();
