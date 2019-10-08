@@ -15,7 +15,12 @@ cc.Class({
 		TotalNum:{
             default: null,
             type: cc.Label
-        }
+        },
+		
+		Answer:{
+			default: null,
+			type: cc.Label
+		}
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -23,6 +28,8 @@ cc.Class({
     onLoad () {
 		//获取本地储存的错题序号信息
 		this.error_list = JSON.parse(cc.sys.localStorage.getItem('userData'));
+		//隐藏答案节点
+		this.Answer.node.active =  false;
 	},
 
     start () {
@@ -51,15 +58,27 @@ cc.Class({
 			//创建一个使用图片资源的新节点对象
         let starNode = new cc.Node(); //创建一个新节点
             //starNode.name = "star1";
-        starNode.setPosition(0,0); //创建位置
+        starNode.setPosition(0,100); //创建位置
         let starSprite = starNode.addComponent(cc.Sprite); //增加精灵组件
         starSprite.spriteFrame = res; //设置精灵组件图片资源
         this.questionList.addChild(starNode); //场景中增加新节点
         });
     },
 	
-	Clicked:function(){
-        ++this.seq;
+	Clicked_next:function(){									//下一题
+		if(this.seq != this.error_list.length){
+			++this.seq;
+			this.Answer.node.active =  false; //隐藏节点
+            this.ErrorQuestion(this.seq);
+			cc.log(this.error_list.toString());
+        }
+    },
+	
+	Clicked_last:function(){									//上一题
+		if(this.seq != 0){					//第一题不能回退
+			--this.seq;
+			this.Answer.node.active =  false; //隐藏节点
+		}
 		if(this.seq != this.error_list.length){
             this.ErrorQuestion(this.seq);
 			cc.log(this.error_list.toString());
@@ -68,8 +87,23 @@ cc.Class({
 			this.toScene();
     },
 	
+	Clicked_answer:function(){									//查看答案
+		var sequence;
+		sequence = this.error_list[this.seq];    //题号
+		if(sequence>=0 && sequence<=49)
+			this.Answer.string = "答案：A".toString();
+		else if(sequence>=50 && sequence<=99)
+			this.Answer.string = "答案：B".toString();
+		else if(sequence>=100 && sequence<=149)
+			this.Answer.string = "答案：C".toString();
+		this.Answer.node.active=true;
+	},
+	
 	toScene:function(){
         cc.director.loadScene("lxybegin");
-    }
+    },
 	
+	toMenu:function(){
+		cc.director.loadScene("lxymenu");
+    }
 });

@@ -1,91 +1,140 @@
-2019-10-06T15:58:10.032Z - normal: Load ~/.CocosCreator/settings.json
-2019-10-06T15:58:11.344Z - normal: Initializing Asset Database
-2019-10-06T15:58:11.348Z - normal: checking language setting...
-2019-10-06T15:58:11.348Z - normal: Language: zh
-2019-10-06T15:58:13.104Z - success: preview server running at http://localhost:7456
-2019-10-06T15:58:13.106Z - success: protocol editor-framework registered
-2019-10-06T15:58:13.106Z - success: protocol app registered
-2019-10-06T15:58:13.106Z - success: protocol theme registered
-2019-10-06T15:58:13.106Z - success: protocol packages registered
-2019-10-06T15:58:13.106Z - success: protocol uuid registerred
-2019-10-06T15:58:13.106Z - success: protocol db registerred
-2019-10-06T15:58:13.106Z - success: protocol thumbnail registerred
-2019-10-06T15:58:13.106Z - success: protocol unpack registerred
-2019-10-06T15:58:13.106Z - success: protocol disable-commonjs registerred
-2019-10-06T15:58:13.808Z - normal: connected!
-2019-10-06T15:58:13.809Z - normal: Check project C:\Users\p1o1s1\Desktop\MaYa_Math
-2019-10-06T15:58:13.811Z - normal: Initializing project C:\Users\p1o1s1\Desktop\MaYa_Math
-2019-10-06T15:58:14.427Z - normal: Initializing Cocos2d
-2019-10-06T15:58:16.215Z - normal: Initializing engine extends
-2019-10-06T15:58:16.469Z - success: asset-db-debugger loaded
-2019-10-06T15:58:16.470Z - success: baidu-adapter loaded
-2019-10-06T15:58:16.471Z - success: color-picker loaded
-2019-10-06T15:58:16.633Z - success: fb-audience-network loaded
-2019-10-06T15:58:16.736Z - success: fb-live-stream loaded
-2019-10-06T15:58:16.745Z - success: google-play-instant loaded
-2019-10-06T15:58:16.755Z - success: huawei-runtime loaded
-2019-10-06T15:58:17.337Z - success: cpk-publish loaded
-2019-10-06T15:58:17.339Z - success: jsb-adapter loaded
-2019-10-06T15:58:17.366Z - success: oppo-runtime loaded
-2019-10-06T15:58:17.370Z - success: package-manager loaded
-2019-10-06T15:58:17.714Z - success: qqplay-adapter loaded
-2019-10-06T15:58:17.716Z - success: runtime-dev-tools loaded
-2019-10-06T15:58:17.723Z - success: sdkbox loaded
-2019-10-06T15:58:17.728Z - success: tester loaded
-2019-10-06T15:58:17.731Z - success: ui-grid loaded
-2019-10-06T15:58:17.733Z - success: ui-kit-preview-extra loaded
-2019-10-06T15:58:17.736Z - success: ui-kit-preview loaded
-2019-10-06T15:58:17.738Z - success: ui-kit loaded
-2019-10-06T15:58:17.740Z - success: ui-tree loaded
-2019-10-06T15:58:17.775Z - success: vivo-runtime loaded
-2019-10-06T15:58:17.776Z - success: weapp-adapter loaded
-2019-10-06T15:58:17.776Z - success: xiaomi-adapter loaded
-2019-10-06T15:58:17.825Z - success: assets loaded
-2019-10-06T15:58:17.828Z - success: builder loaded
-2019-10-06T15:58:18.229Z - success: cocos-services loaded
-2019-10-06T15:58:18.234Z - success: console loaded
-2019-10-06T15:58:18.264Z - success: fb-instant-games loaded
-2019-10-06T15:58:18.268Z - success: game-window loaded
-2019-10-06T15:58:18.269Z - success: google-instant-games loaded
-2019-10-06T15:58:18.275Z - success: hierarchy loaded
-2019-10-06T15:58:18.278Z - success: inspector loaded
-2019-10-06T15:58:18.279Z - success: keystore loaded
-2019-10-06T15:58:18.284Z - success: node-library loaded
-2019-10-06T15:58:18.286Z - success: package-asset loaded
-2019-10-06T15:58:18.287Z - success: preferences loaded
-2019-10-06T15:58:18.289Z - success: project-exporter loaded
-2019-10-06T15:58:18.291Z - success: project-importer loaded
-2019-10-06T15:58:18.294Z - success: project-settings loaded
-2019-10-06T15:58:18.297Z - success: scene loaded
-2019-10-06T15:58:18.299Z - success: simulator-debugger loaded
-2019-10-06T15:58:18.300Z - success: sprite-editor loaded
-2019-10-06T15:58:18.303Z - success: store loaded
-2019-10-06T15:58:18.308Z - success: timeline loaded
-2019-10-06T15:58:18.314Z - success: xiaomi-runtime loaded
-2019-10-06T15:58:20.994Z - normal: Loading packages
-2019-10-06T15:58:21.001Z - normal: Watching packages
-2019-10-06T15:58:21.548Z - normal: Run Application
-2019-10-06T15:58:21.988Z - info: Cocos Services load base data!
-2019-10-06T16:07:50.106Z - error: Node name can not include '/'.
-    at Object.cc.errorID (D:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at cc_Node.set (D:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:124:32)
-    at d (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\set-property-by-path.js:1:3997)
-    at Object.b [as setPropertyByPath] (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\set-property-by-path.js:1:5194)
-    at Object.setProperty (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\scene.js:1:8351)
-    at HTMLElement.set-property (D:\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:782)
-    at Object.e._dispatch (D:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (D:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2921)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-10-06T16:07:55.462Z - error: Node name can not include '/'.
-    at Object.cc.errorID (D:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at cc_Node.set (D:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:124:32)
-    at d (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\set-property-by-path.js:1:3997)
-    at Object.b [as setPropertyByPath] (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\set-property-by-path.js:1:5194)
-    at Object.setProperty (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\scene.js:1:8351)
-    at HTMLElement.set-property (D:\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:782)
-    at Object.e._dispatch (D:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (D:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2921)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-10-06T16:18:03.156Z - info: shutdown preview server
+2019-10-08T09:42:02.725Z - normal: Load ~/.CocosCreator/settings.json
+2019-10-08T09:42:03.991Z - normal: Initializing Asset Database
+2019-10-08T09:42:03.995Z - normal: checking language setting...
+2019-10-08T09:42:03.996Z - normal: Language: zh
+2019-10-08T09:42:04.833Z - success: preview server running at http://localhost:7456
+2019-10-08T09:42:04.835Z - success: protocol editor-framework registered
+2019-10-08T09:42:04.835Z - success: protocol app registered
+2019-10-08T09:42:04.835Z - success: protocol theme registered
+2019-10-08T09:42:04.835Z - success: protocol packages registered
+2019-10-08T09:42:04.836Z - success: protocol uuid registerred
+2019-10-08T09:42:04.836Z - success: protocol db registerred
+2019-10-08T09:42:04.836Z - success: protocol thumbnail registerred
+2019-10-08T09:42:04.836Z - success: protocol unpack registerred
+2019-10-08T09:42:04.836Z - success: protocol disable-commonjs registerred
+2019-10-08T09:42:05.501Z - normal: connected!
+2019-10-08T09:42:05.503Z - normal: Check project C:\Users\p1o1s1\Desktop\MaYa_Math
+2019-10-08T09:42:05.505Z - normal: Initializing project C:\Users\p1o1s1\Desktop\MaYa_Math
+2019-10-08T09:42:05.966Z - normal: Initializing Cocos2d
+2019-10-08T09:42:06.952Z - normal: Initializing engine extends
+2019-10-08T09:42:06.978Z - success: asset-db-debugger loaded
+2019-10-08T09:42:06.979Z - success: baidu-adapter loaded
+2019-10-08T09:42:06.980Z - success: color-picker loaded
+2019-10-08T09:42:07.093Z - success: fb-audience-network loaded
+2019-10-08T09:42:07.172Z - success: fb-live-stream loaded
+2019-10-08T09:42:07.177Z - success: google-play-instant loaded
+2019-10-08T09:42:07.184Z - success: huawei-runtime loaded
+2019-10-08T09:42:07.507Z - success: cpk-publish loaded
+2019-10-08T09:42:07.508Z - success: jsb-adapter loaded
+2019-10-08T09:42:07.517Z - success: oppo-runtime loaded
+2019-10-08T09:42:07.524Z - success: package-manager loaded
+2019-10-08T09:42:07.683Z - success: qqplay-adapter loaded
+2019-10-08T09:42:07.686Z - success: runtime-dev-tools loaded
+2019-10-08T09:42:07.691Z - success: sdkbox loaded
+2019-10-08T09:42:07.698Z - success: tester loaded
+2019-10-08T09:42:07.700Z - success: ui-grid loaded
+2019-10-08T09:42:07.703Z - success: ui-kit-preview-extra loaded
+2019-10-08T09:42:07.705Z - success: ui-kit-preview loaded
+2019-10-08T09:42:07.708Z - success: ui-kit loaded
+2019-10-08T09:42:07.710Z - success: ui-tree loaded
+2019-10-08T09:42:07.716Z - success: vivo-runtime loaded
+2019-10-08T09:42:07.717Z - success: weapp-adapter loaded
+2019-10-08T09:42:07.718Z - success: xiaomi-adapter loaded
+2019-10-08T09:42:07.785Z - success: assets loaded
+2019-10-08T09:42:07.788Z - success: builder loaded
+2019-10-08T09:42:08.139Z - success: cocos-services loaded
+2019-10-08T09:42:08.145Z - success: console loaded
+2019-10-08T09:42:08.184Z - success: fb-instant-games loaded
+2019-10-08T09:42:08.188Z - success: game-window loaded
+2019-10-08T09:42:08.190Z - success: google-instant-games loaded
+2019-10-08T09:42:08.195Z - success: hierarchy loaded
+2019-10-08T09:42:08.198Z - success: inspector loaded
+2019-10-08T09:42:08.199Z - success: keystore loaded
+2019-10-08T09:42:08.204Z - success: node-library loaded
+2019-10-08T09:42:08.205Z - success: package-asset loaded
+2019-10-08T09:42:08.207Z - success: preferences loaded
+2019-10-08T09:42:08.208Z - success: project-exporter loaded
+2019-10-08T09:42:08.211Z - success: project-importer loaded
+2019-10-08T09:42:08.214Z - success: project-settings loaded
+2019-10-08T09:42:08.219Z - success: scene loaded
+2019-10-08T09:42:08.220Z - success: simulator-debugger loaded
+2019-10-08T09:42:08.222Z - success: sprite-editor loaded
+2019-10-08T09:42:08.228Z - success: store loaded
+2019-10-08T09:42:08.233Z - success: timeline loaded
+2019-10-08T09:42:08.239Z - success: xiaomi-runtime loaded
+2019-10-08T09:42:12.667Z - normal: Loading packages
+2019-10-08T09:42:12.675Z - normal: Watching packages
+2019-10-08T09:42:12.806Z - info: Cocos Services load base data!
+2019-10-08T09:42:13.576Z - normal: Run Application
+2019-10-08T09:56:56.928Z - info: 插件脚本在编辑器中加载时，在最外层用 var 声明的变量将不再做为全局变量。如果不需要在编辑器中加载插件，则直接取消"允许编辑器加载"即可，否则请改用 "window.xx = yy;" 来定义全局变量。 😂
+插件脚本："C:\Users\p1o1s1\Desktop\MaYa_Math\assets\Script\Alert.js"
+所在行："var Alert = {"
+2019-10-08T10:00:18.023Z - failed: [db-task][sync-changes] Failed to import asset C:\Users\p1o1s1\Desktop\MaYa_Math\assets\Script\menuscript.js, message: Compile error: SyntaxError: C:/Users/p1o1s1/Desktop/MaYa_Math/assets/Script/menuscript.js: Unexpected token, expected , (47:0)
+  45 | 		}
+  46 |      }
+> 47 | });
+     | ^
+  48 | 
+    at Parser.pp$5.raise (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp.expect (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1749:33)
+    at Parser.pp$3.parseCallExpressionArguments (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3564:12)
+    at Parser.pp$3.parseSubscripts (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3533:31)
+    at Parser.pp$3.parseExprSubscripts (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3504:15)
+    at Parser.pp$3.parseMaybeUnary (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+2019-10-08T10:03:27.654Z - failed: [db-task][sync-changes] Failed to import asset C:\Users\p1o1s1\Desktop\MaYa_Math\assets\Script\menuscript.js, message: Compile error: SyntaxError: C:/Users/p1o1s1/Desktop/MaYa_Math/assets/Script/menuscript.js: Unexpected token (44:2)
+  42 | 		if(this.errorlist.length != 0){
+  43 | 			cc.director.loadScene("error_list");
+> 44 | 		else
+     | 		^
+  45 | 			Alert.show("憨批张亚哲", null, false);
+  46 | 		}
+  47 |      
+    at Parser.pp$5.raise (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp$3.parseExprAtom (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3750:12)
+    at Parser.pp$3.parseExprSubscripts (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+    at Parser.pp$3.parseExpression (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3306:19)
+    at Parser.pp$1.parseStatement (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1906:19)
+2019-10-08T10:05:27.095Z - failed: [db-task][sync-changes] Failed to import asset C:\Users\p1o1s1\Desktop\MaYa_Math\assets\Script\menuscript.js, message: Compile error: SyntaxError: C:/Users/p1o1s1/Desktop/MaYa_Math/assets/Script/menuscript.js: Unexpected token (44:2)
+  42 | 		
+  43 | 			cc.director.loadScene("error_list");
+> 44 | 		else
+     | 		^
+  45 | 			Alert.show("憨批张亚哲", null, false);
+  46 | 		}
+  47 |      
+    at Parser.pp$5.raise (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp$3.parseExprAtom (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3750:12)
+    at Parser.pp$3.parseExprSubscripts (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+    at Parser.pp$3.parseExpression (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3306:19)
+    at Parser.pp$1.parseStatement (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1906:19)
+2019-10-08T10:08:44.042Z - failed: [db-task][sync-changes] Failed to import asset C:\Users\p1o1s1\Desktop\MaYa_Math\assets\Script\menuscript.js, message: Compile error: SyntaxError: C:/Users/p1o1s1/Desktop/MaYa_Math/assets/Script/menuscript.js: Unexpected token, expected , (49:1)
+  47 | 		
+  48 |      
+> 49 | });
+     |  ^
+  50 | 
+    at Parser.pp$5.raise (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp.expect (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1749:33)
+    at Parser.pp$3.parseObj (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3978:12)
+    at Parser.pp$3.parseExprAtom (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3719:19)
+    at Parser.pp$3.parseExprSubscripts (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+2019-10-08T10:13:43.241Z - info: shutdown preview server

@@ -1,6 +1,6 @@
 {
+  "aclear": true,
+  "collapse": false,
   "fontsize": 14,
-  "lineheight": 30,
-  "aclear": false,
-  "collapse": false
+  "lineheight": 30
 }
