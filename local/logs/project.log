@@ -1,71 +1,147 @@
-2019-10-11T15:00:51.133Z - normal: Load ~/.CocosCreator/settings.json
-2019-10-11T15:00:51.190Z - normal: Initializing Asset Database
-2019-10-11T15:00:51.193Z - normal: checking language setting...
-2019-10-11T15:00:51.193Z - normal: Language: zh
-2019-10-11T15:00:51.859Z - success: preview server running at http://localhost:7456
-2019-10-11T15:00:51.871Z - success: protocol editor-framework registered
-2019-10-11T15:00:51.871Z - success: protocol app registered
-2019-10-11T15:00:51.871Z - success: protocol theme registered
-2019-10-11T15:00:51.871Z - success: protocol packages registered
-2019-10-11T15:00:51.872Z - success: protocol uuid registerred
-2019-10-11T15:00:51.872Z - success: protocol db registerred
-2019-10-11T15:00:51.872Z - success: protocol thumbnail registerred
-2019-10-11T15:00:51.872Z - success: protocol unpack registerred
-2019-10-11T15:00:51.872Z - success: protocol disable-commonjs registerred
-2019-10-11T15:00:52.093Z - normal: connected!
-2019-10-11T15:00:52.095Z - normal: Check project /Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math
-2019-10-11T15:00:52.097Z - normal: Initializing project /Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math
-2019-10-11T15:00:52.409Z - normal: Initializing Cocos2d
-2019-10-11T15:00:53.158Z - normal: Initializing engine extends
-2019-10-11T15:00:53.217Z - success: asset-db-debugger loaded
-2019-10-11T15:00:53.227Z - success: baidu-adapter loaded
-2019-10-11T15:00:53.228Z - success: color-picker loaded
-2019-10-11T15:00:53.317Z - success: fb-audience-network loaded
-2019-10-11T15:00:53.362Z - success: fb-live-stream loaded
-2019-10-11T15:00:53.365Z - success: google-play-instant loaded
-2019-10-11T15:00:53.372Z - success: huawei-runtime loaded
-2019-10-11T15:00:53.622Z - success: cpk-publish loaded
-2019-10-11T15:00:53.624Z - success: jsb-adapter loaded
-2019-10-11T15:00:53.631Z - success: oppo-runtime loaded
-2019-10-11T15:00:53.636Z - success: package-manager loaded
-2019-10-11T15:00:53.770Z - success: qqplay-adapter loaded
-2019-10-11T15:00:53.773Z - success: runtime-dev-tools loaded
-2019-10-11T15:00:53.779Z - success: sdkbox loaded
-2019-10-11T15:00:53.783Z - success: tester loaded
-2019-10-11T15:00:53.790Z - success: ui-grid loaded
-2019-10-11T15:00:53.793Z - success: ui-kit-preview-extra loaded
-2019-10-11T15:00:53.797Z - success: ui-kit-preview loaded
-2019-10-11T15:00:53.799Z - success: ui-kit loaded
-2019-10-11T15:00:53.803Z - success: ui-tree loaded
-2019-10-11T15:00:53.807Z - success: vivo-runtime loaded
-2019-10-11T15:00:53.808Z - success: weapp-adapter loaded
-2019-10-11T15:00:53.809Z - success: xiaomi-adapter loaded
-2019-10-11T15:00:53.846Z - success: assets loaded
-2019-10-11T15:00:53.850Z - success: builder loaded
-2019-10-11T15:00:54.052Z - success: cocos-services loaded
-2019-10-11T15:00:54.058Z - success: console loaded
-2019-10-11T15:00:54.089Z - success: fb-instant-games loaded
-2019-10-11T15:00:54.092Z - success: game-window loaded
-2019-10-11T15:00:54.094Z - success: google-instant-games loaded
-2019-10-11T15:00:54.098Z - success: hierarchy loaded
-2019-10-11T15:00:54.102Z - success: inspector loaded
-2019-10-11T15:00:54.102Z - success: keystore loaded
-2019-10-11T15:00:54.108Z - success: node-library loaded
-2019-10-11T15:00:54.109Z - success: package-asset loaded
-2019-10-11T15:00:54.111Z - success: preferences loaded
-2019-10-11T15:00:54.114Z - success: project-exporter loaded
-2019-10-11T15:00:54.118Z - success: project-importer loaded
-2019-10-11T15:00:54.121Z - success: project-settings loaded
-2019-10-11T15:00:54.127Z - success: scene loaded
-2019-10-11T15:00:54.128Z - success: simulator-debugger loaded
-2019-10-11T15:00:54.129Z - success: sprite-editor loaded
-2019-10-11T15:00:54.133Z - success: store loaded
-2019-10-11T15:00:54.146Z - success: timeline loaded
-2019-10-11T15:00:54.150Z - success: xiaomi-runtime loaded
-2019-10-11T15:00:55.207Z - normal: Loading packages
-2019-10-11T15:00:55.212Z - normal: Watching packages
-2019-10-11T15:00:55.287Z - normal: Run Application
-2019-10-11T15:00:56.132Z - info: Cocos Services load base data!
-2019-10-11T15:03:15.797Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Scene/New Scene.fire.meta
-2019-10-11T15:03:51.977Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Script/NewScript.js.meta
-2019-10-11T15:58:49.529Z - info: shutdown preview server
+2019-10-13T01:37:11.193Z - normal: Load ~/.CocosCreator/settings.json
+2019-10-13T01:37:11.251Z - normal: Initializing Asset Database
+2019-10-13T01:37:11.254Z - normal: checking language setting...
+2019-10-13T01:37:11.254Z - normal: Language: zh
+2019-10-13T01:37:11.962Z - success: preview server running at http://localhost:7456
+2019-10-13T01:37:11.975Z - success: protocol editor-framework registered
+2019-10-13T01:37:11.975Z - success: protocol app registered
+2019-10-13T01:37:11.975Z - success: protocol theme registered
+2019-10-13T01:37:11.975Z - success: protocol packages registered
+2019-10-13T01:37:11.975Z - success: protocol uuid registerred
+2019-10-13T01:37:11.976Z - success: protocol db registerred
+2019-10-13T01:37:11.976Z - success: protocol thumbnail registerred
+2019-10-13T01:37:11.976Z - success: protocol unpack registerred
+2019-10-13T01:37:11.976Z - success: protocol disable-commonjs registerred
+2019-10-13T01:37:12.190Z - normal: connected!
+2019-10-13T01:37:12.192Z - normal: Check project /Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math
+2019-10-13T01:37:12.194Z - normal: Initializing project /Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math
+2019-10-13T01:37:12.577Z - normal: Initializing Cocos2d
+2019-10-13T01:37:13.363Z - normal: Initializing engine extends
+2019-10-13T01:37:13.438Z - success: asset-db-debugger loaded
+2019-10-13T01:37:13.439Z - success: baidu-adapter loaded
+2019-10-13T01:37:13.440Z - success: color-picker loaded
+2019-10-13T01:37:13.541Z - success: fb-audience-network loaded
+2019-10-13T01:37:13.604Z - success: fb-live-stream loaded
+2019-10-13T01:37:13.607Z - success: google-play-instant loaded
+2019-10-13T01:37:13.614Z - success: huawei-runtime loaded
+2019-10-13T01:37:13.873Z - success: cpk-publish loaded
+2019-10-13T01:37:13.874Z - success: jsb-adapter loaded
+2019-10-13T01:37:13.881Z - success: oppo-runtime loaded
+2019-10-13T01:37:13.886Z - success: package-manager loaded
+2019-10-13T01:37:14.033Z - success: qqplay-adapter loaded
+2019-10-13T01:37:14.034Z - success: runtime-dev-tools loaded
+2019-10-13T01:37:14.039Z - success: sdkbox loaded
+2019-10-13T01:37:14.043Z - success: tester loaded
+2019-10-13T01:37:14.047Z - success: ui-grid loaded
+2019-10-13T01:37:14.050Z - success: ui-kit-preview-extra loaded
+2019-10-13T01:37:14.054Z - success: ui-kit-preview loaded
+2019-10-13T01:37:14.057Z - success: ui-kit loaded
+2019-10-13T01:37:14.060Z - success: ui-tree loaded
+2019-10-13T01:37:14.064Z - success: vivo-runtime loaded
+2019-10-13T01:37:14.065Z - success: weapp-adapter loaded
+2019-10-13T01:37:14.066Z - success: xiaomi-adapter loaded
+2019-10-13T01:37:14.102Z - success: assets loaded
+2019-10-13T01:37:14.106Z - success: builder loaded
+2019-10-13T01:37:14.398Z - success: cocos-services loaded
+2019-10-13T01:37:14.405Z - success: console loaded
+2019-10-13T01:37:14.433Z - success: fb-instant-games loaded
+2019-10-13T01:37:14.439Z - success: game-window loaded
+2019-10-13T01:37:14.440Z - success: google-instant-games loaded
+2019-10-13T01:37:14.446Z - success: hierarchy loaded
+2019-10-13T01:37:14.450Z - success: inspector loaded
+2019-10-13T01:37:14.452Z - success: keystore loaded
+2019-10-13T01:37:14.456Z - success: node-library loaded
+2019-10-13T01:37:14.458Z - success: package-asset loaded
+2019-10-13T01:37:14.460Z - success: preferences loaded
+2019-10-13T01:37:14.464Z - success: project-exporter loaded
+2019-10-13T01:37:14.475Z - success: project-importer loaded
+2019-10-13T01:37:14.478Z - success: project-settings loaded
+2019-10-13T01:37:14.484Z - success: scene loaded
+2019-10-13T01:37:14.486Z - success: simulator-debugger loaded
+2019-10-13T01:37:14.487Z - success: sprite-editor loaded
+2019-10-13T01:37:14.494Z - success: store loaded
+2019-10-13T01:37:14.502Z - success: timeline loaded
+2019-10-13T01:37:14.508Z - success: xiaomi-runtime loaded
+2019-10-13T01:37:15.686Z - normal: Loading packages
+2019-10-13T01:37:15.691Z - normal: Watching packages
+2019-10-13T01:37:15.778Z - normal: Run Application
+2019-10-13T01:37:16.189Z - info: Cocos Services load base data!
+2019-10-13T04:02:02.111Z - error: Node name can not include '/'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at cc_Node.set (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/utils/base-node.js:124:32)
+    at d (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:3997)
+    at Object.b [as setPropertyByPath] (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:5194)
+    at Object.setProperty (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils/scene.js:1:8351)
+    at HTMLElement.set-property (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/scene/panel/messages/scene-operation.js:1:782)
+    at Object.e._dispatch (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1941)
+    at EventEmitter.o.on.s (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2921)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-10-13T04:02:08.167Z - error: Node name can not include '/'.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at cc_Node.set (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/utils/base-node.js:124:32)
+    at d (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:3997)
+    at Object.b [as setPropertyByPath] (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:5194)
+    at Object.setProperty (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils/scene.js:1:8351)
+    at HTMLElement.set-property (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/scene/panel/messages/scene-operation.js:1:782)
+    at Object.e._dispatch (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1941)
+    at EventEmitter.o.on.s (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2921)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-10-13T04:28:17.437Z - error: [db-task][delete] Failed to delete asset undefined, messages: Error: Asset /Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math/assets/Scene/select_type.fire is not exists
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/tasks.js:1:17459
+    at i.each (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/tasks.js:1:17886)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:181:20
+    at Object.async.forEachOf.async.eachOf (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:233:13)
+    at Object.async.forEach.async.each (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:209:22)
+    at u.l.delete (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/tasks.js:1:17389)
+    at _tasks.r.queue (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/index.js:1:2264)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:987:13
+    at Immediate.process (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:953:21)
+    at runCallback (timers.js:672:20)
+    at u.o.error (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/utils.js:1:2250)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/tasks.js:1:17938
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/tasks.js:1:17457
+    at i.each (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/tasks.js:1:17886)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:181:20
+    at Object.async.forEachOf.async.eachOf (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:233:13)
+    at Object.async.forEach.async.each (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:209:22)
+    at u.l.delete (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/tasks.js:1:17389)
+    at _tasks.r.queue (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/index.js:1:2264)
+2019-10-13T04:28:44.968Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Scene/New Scene.fire.meta
+2019-10-13T04:29:23.761Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Scene/fill-in-blanks.fire.meta
+2019-10-13T04:31:43.558Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Scene/New Scene.fire.meta
+2019-10-13T04:40:50.997Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Script/NewScript.js.meta
+2019-10-13T05:54:24.111Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Scene/fill-in-blanks-3 - 001.fire.meta
+2019-10-13T05:54:24.132Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Scene/fill-in-blanks-3 - 002.fire.meta
+2019-10-13T05:54:41.256Z - error: Can not find import path [/Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math/library/imports/24/24136822-635c-4a2a-b9d0-9bd3c261c729.js]
+    at n.each (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/quick-compiler.js:1:4876)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:181:20
+    at Object.async.forEachOf.async.eachOf (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:233:13)
+    at Object.async.forEach.async.each (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:209:22)
+    at Object._compileScripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/quick-compiler.js:1:4740)
+    at invokeFunc (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/lodash/lodash.js:10335:23)
+    at trailingEdge (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/lodash/lodash.js:10384:18)
+    at Timeout.timerExpired [as _onTimeout] (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/lodash/lodash.js:10372:18)
+    at ontimeout (timers.js:386:14)
+2019-10-13T05:55:46.881Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Script/fill-in-blanks - 001.js.meta
+2019-10-13T05:55:46.914Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Script/fill-in-blanks - 002.js.meta
+2019-10-13T05:55:46.925Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Script/fill-in-blanks.js.meta
+2019-10-13T05:55:55.015Z - warn: Script attached to "Canvas" in scene "fill-in-blanks-1.fire" is missing or invalid. Detailed information:
+Node path: "Canvas"
+Asset url: "db://assets/Scene/fill-in-blanks-1.fire"
+Script UUID: "04b7dd94-b3e8-40e8-87c7-71f7e47dd704"
+Class ID: "04b7d2Us+hA6IfHcffkfdcE"
+
+2019-10-13T05:57:25.905Z - warn: Script attached to "Canvas" in scene "fill-in-blanks-3.fire" is missing or invalid. Detailed information:
+Node path: "Canvas"
+Asset url: "db://assets/Scene/fill-in-blanks-3.fire"
+Script UUID: "04b7dd94-b3e8-40e8-87c7-71f7e47dd704"
+Class ID: "04b7d2Us+hA6IfHcffkfdcE"
+
+2019-10-13T06:02:09.030Z - warn: Script attached to "Canvas" in scene "fill-in-blanks-2.fire" is missing or invalid. Detailed information:
+Node path: "Canvas"
+Asset url: "db://assets/Scene/fill-in-blanks-2.fire"
+Script UUID: "04b7dd94-b3e8-40e8-87c7-71f7e47dd704"
+Class ID: "04b7d2Us+hA6IfHcffkfdcE"
+

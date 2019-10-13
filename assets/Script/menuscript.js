@@ -7,10 +7,12 @@ cc.Class({
 	
 	onLoad () {
 		//获取本地储存的错题序号信息，若无错题则无法进入错题本
-		this.error_list = JSON.parse(cc.sys.localStorage.getItem('userData'));
+      this.error_list = JSON.parse(cc.sys.localStorage.getItem('userData'));
+      
 	},
 	
     start () {
+
     },
 
      toGrd1: function(){
@@ -22,7 +24,8 @@ cc.Class({
      },
 
      toGrd3: function(){
-        cc.director.loadScene("main_scene")
+        cc.director.loadScene("SetNum");
+        
      },
 
      toGrd4: function(){

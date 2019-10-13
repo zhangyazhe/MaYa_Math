@@ -25,7 +25,7 @@ cc.Class({
    },
 
    toGrd3: function toGrd3() {
-      cc.director.loadScene("main_scene");
+      cc.director.loadScene("SetNum");
    },
 
    toGrd4: function toGrd4() {
