@@ -1,14 +1,21 @@
 {
   "version": "1.1.1",
   "windows": {
+    "worker": {},
     "main": {
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
       "x": 0,
+<<<<<<< HEAD
       "y": 0,
       "width": 1536,
       "height": 824,
+=======
+      "y": 23,
+      "width": 1440,
+      "height": 809,
+>>>>>>> 3e5e84721b9969685fa5b7680c30b1414b94fac3
       "layout": {
         "children": [
           {
@@ -18,7 +25,11 @@
                 "children": [
                   "hierarchy"
                 ],
+<<<<<<< HEAD
                 "height": 377.1499938964844,
+=======
+                "height": 387.640625,
+>>>>>>> 3e5e84721b9969685fa5b7680c30b1414b94fac3
                 "type": "panel",
                 "width": 305.1750183105469
               },
@@ -27,12 +38,20 @@
                 "children": [
                   "assets"
                 ],
+<<<<<<< HEAD
                 "height": 328.0375061035156,
+=======
+                "height": 337.359375,
+>>>>>>> 3e5e84721b9969685fa5b7680c30b1414b94fac3
                 "type": "panel",
                 "width": 305.1750183105469
               }
             ],
+<<<<<<< HEAD
             "height": 707.2000122070312,
+=======
+            "height": 727,
+>>>>>>> 3e5e84721b9969685fa5b7680c30b1414b94fac3
             "type": "dock-v",
             "width": 305.1750183105469
           },
@@ -43,7 +62,11 @@
                 "children": [
                   "scene"
                 ],
+<<<<<<< HEAD
                 "height": 439.20001220703125,
+=======
+                "height": 459,
+>>>>>>> 3e5e84721b9969685fa5b7680c30b1414b94fac3
                 "type": "panel",
                 "width": 761.8624877929688
               },
@@ -59,7 +82,11 @@
                 "width": 761.8624877929688
               }
             ],
+<<<<<<< HEAD
             "height": 707.2000122070312,
+=======
+            "height": 727,
+>>>>>>> 3e5e84721b9969685fa5b7680c30b1414b94fac3
             "type": "dock-v",
             "width": 761.8624877929688
           },
@@ -69,7 +96,11 @@
               "inspector",
               "cocos-services"
             ],
+<<<<<<< HEAD
             "height": 707.2000122070312,
+=======
+            "height": 727,
+>>>>>>> 3e5e84721b9969685fa5b7680c30b1414b94fac3
             "type": "panel",
             "width": 451.3500061035156
           }
