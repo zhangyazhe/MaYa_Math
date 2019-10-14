@@ -50,11 +50,13 @@ cc.Class({
         cc.log("start to run");
         this.input = "";
         this.answer = "";
-        this.choose = 33;
+        this.choose = JSON.parse(cc.sys.localStorage.getItem('choose'));
         this.score = 0;
         this.defaultGame();
         this.schedule(this.doCountTime,1);//计时
         this.seq = 1;
+		this.total = JSON.parse(cc.sys.localStorage.getItem('total'));
+		this.lbSeqTotal.string= this.total.toString();
     },
 
     //计时
@@ -312,12 +314,12 @@ cc.Class({
     },
 
     bt_commit_Clicked:function(){
-        this.refreshSeq();
         if(this.input.length == 0){
             Alert.show("你还没有填写答案，不能提交哦", null, false);
         }
         else{
             cc.log("commit successfully");
+			this.refreshSeq();
             if(this.answer == this.input){
                 cc.log("Your answer is right");
                 this.refreshScore();
@@ -326,14 +328,21 @@ cc.Class({
             }
             this.input = "";
             this.lable_input.string = this.input;
+			if(this.seq != this.total)
+				this.defaultGame();
+			else
+				cc.director.loadScene("lxymenu");//在这里跳到结果页面
         }
-        this.defaultGame();
+        
     },
 
     bt_skip_Clicked:function(){
         this.refreshSeq();
         Alert.show("别担心，稍后可以在错题中查看答案哦^_^", null, false);
-        this.defaultGame();
+        if(this.seq != this.total)
+				this.defaultGame();
+			else
+				cc.director.loadScene("lxymenu");//在这里跳到结果页面
     },
 
     //刷新得分

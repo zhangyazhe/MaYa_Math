@@ -16,30 +16,17 @@ cc.Class({
     },
 
      toGrd1: function(){
-        cc.director.loadScene("main_scene")
+        cc.director.loadScene("exercise type-1")
      },
 
      toGrd2: function(){
-        cc.director.loadScene("main_scene")
+        cc.director.loadScene("exercise type-2")
      },
 
      toGrd3: function(){
-        cc.director.loadScene("SetNum");
+        cc.director.loadScene("exercise type-3");
         
      },
-
-     toGrd4: function(){
-        cc.director.loadScene("main_scene")
-     },
-
-     toGrd5: function(){
-        cc.director.loadScene("main_scene")
-     },
-
-     toGrd6: function(){
-        cc.director.loadScene("main_scene")
-     },
-     
      toErb: function(){
 		if(this.error_list == null)
 			Alert.show("暂无错题", null, false);

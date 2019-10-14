@@ -50,11 +50,13 @@ cc.Class({
         cc.log("start to run");
         this.input = "";
         this.answer = "";
-        this.choose = 18;
+        this.choose = JSON.parse(cc.sys.localStorage.getItem('choose'));
         this.score = 0;
         this.defaultGame();
         this.schedule(this.doCountTime,1);//计时
         this.seq = 1;
+		this.total = JSON.parse(cc.sys.localStorage.getItem('total'));
+		this.lbSeqTotal.string= this.total.toString();
     },
 
     //计时
@@ -89,7 +91,10 @@ cc.Class({
             case 17:
                 this.level_17();
                 break;
-            case 18:
+			case 18:
+                this.level_18();
+                break;
+            case 19:
                 var op=Math.round(Math.random()*8)+10;
                 switch(op){
                         case 11:
@@ -113,7 +118,7 @@ cc.Class({
                         case 17:
                             this.level_17();
                             break;
-                        case 18:
+						case 18:
                             this.level_18();
                             break;
                 }
@@ -155,7 +160,7 @@ cc.Class({
     },
 
 
-    level_12:function(){//6~10加法
+    level_13:function(){//6~10加法
         var random1=Math.round(Math.random()*10);
         while(random1<6){
             random1=Math.round(Math.random()*10);
@@ -175,7 +180,7 @@ cc.Class({
 
     },
 
-    level_13:function(){//6~10减法
+    level_14:function(){//6~10减法
         var random1=Math.round(Math.random()*10);
         while(random1<6){
             random1=Math.round(Math.random()*10);
@@ -200,7 +205,7 @@ cc.Class({
 
     },
 
-    level_14:function(){//10以内的连加
+    level_15:function(){//10以内的连加
         var random1=Math.round(Math.random()*10);
         var random2=Math.round(Math.random()*10);
         var random3=Math.round(Math.random()*10);
@@ -217,7 +222,7 @@ cc.Class({
 
     },
 
-    level_15:function(){//10以内的连减
+    level_16:function(){//10以内的连减
         var random1=Math.round(Math.random()*10);
         var random2=Math.round(Math.random()*10);
         var random3=Math.round(Math.random()*10);
@@ -240,7 +245,7 @@ cc.Class({
 
     },
     
-    level_16:function(){//10以内的连加减
+    level_17:function(){//10以内的连加减
         var random1=Math.round(Math.random()*10);
         var random2=Math.round(Math.random()*10);
         var random3=Math.round(Math.random()*10);
@@ -282,7 +287,7 @@ cc.Class({
         cc.log("The answer is "+this.answer);
     },
 
-        level_17:function(){//10~20加减
+        level_18:function(){//10~20加减
             var random1=Math.round(Math.random()*20);
             while(random1<10){
                 random1=Math.round(Math.random()*20);
@@ -396,12 +401,12 @@ cc.Class({
     },
 
     bt_commit_Clicked:function(){
-        this.refreshSeq();
         if(this.input.length == 0){
             Alert.show("你还没有填写答案，不能提交哦", null, false);
         }
         else{
             cc.log("commit successfully");
+			this.refreshSeq();
             if(this.answer == this.input){
                 cc.log("Your answer is right");
                 this.refreshScore();
@@ -410,15 +415,21 @@ cc.Class({
             }
             this.input = "";
             this.lable_input.string = this.input;
+			if(this.seq != this.total)
+				this.defaultGame();
+			else
+				cc.director.loadScene("lxymenu");//在这里跳到结果页面
         }
-        
-        this.defaultGame();
+          
     },
 
     bt_skip_Clicked:function(){
         this.refreshSeq();
         Alert.show("别担心，稍后可以在错题中查看答案哦^_^", null, false);
-        this.defaultGame();
+        if(this.seq != this.total)
+				this.defaultGame();
+			else
+				cc.director.loadScene("lxymenu");//在这里跳到结果页面
     },
 
     //刷新得分
