@@ -430,8 +430,8 @@
     "relativePath": "Prefab"
   },
   "e4f98629-48d4-4f59-bf93-cf297f50cfdd": {
-    "asset": 1570967530597,
-    "meta": 1570981737888,
+    "asset": 1571038790350,
+    "meta": 1571038790379,
     "relativePath": "Prefab\\right.prefab"
   },
   "2cc8bfa4-f928-4b0f-8aec-df807e65c7b4": {
@@ -1220,13 +1220,13 @@
     "relativePath": "Scene\\error_list.fire"
   },
   "0eb7f329-6e1d-47a3-86f5-c6af45eff743": {
-    "asset": 1570981094798,
-    "meta": 1570981739749,
+    "asset": 1571037244698,
+    "meta": 1571037244732,
     "relativePath": "Scene\\fill-in-blanks-1.fire"
   },
   "ac73c4ff-2c5a-41da-ba68-05bd816f214e": {
-    "asset": 1570967530612,
-    "meta": 1570981739757,
+    "asset": 1571039495399,
+    "meta": 1571039495423,
     "relativePath": "Scene\\fill-in-blanks-2.fire"
   },
   "e03dfb13-32bc-4aab-898f-a4146eecad3b": {
@@ -1235,8 +1235,8 @@
     "relativePath": "Scene\\lxybegin.fire"
   },
   "e8e9edf0-7eee-4c4d-b05f-515135f6de95": {
-    "asset": 1570967530614,
-    "meta": 1570981739772,
+    "asset": 1571037265158,
+    "meta": 1571037265180,
     "relativePath": "Scene\\fill-in-blanks-3.fire"
   },
   "25d0741b-9745-4d85-ae77-04291015481d": {
@@ -1444,11 +1444,6 @@
     "meta": 1571025705740,
     "relativePath": "Script\\choose or blank.js"
   },
-  "d2e5c410-4c75-4d2f-aed7-5b0c57f79307": {
-    "asset": 1571025809337,
-    "meta": 1571025828648,
-    "relativePath": "Script\\grade2_exercise_type.js"
-  },
   "21f5e213-b5c2-4c4a-be8f-58116274f136": {
     "asset": 1571026226932,
     "meta": 1571026230593,
@@ -1469,19 +1464,49 @@
     "meta": 1571032044678,
     "relativePath": "Script\\setNum.js"
   },
+  "d2e5c410-4c75-4d2f-aed7-5b0c57f79307": {
+    "asset": 1571036085849,
+    "meta": 1571036620888,
+    "relativePath": "Script\\grade2_exercise_type.js"
+  },
   "d0386b5d-cf2d-41f5-a9f6-499aa5fe3c6a": {
-    "asset": 1571032663240,
-    "meta": 1571032688849,
+    "asset": 1571037216083,
+    "meta": 1571037223266,
     "relativePath": "Script\\fill-in-blanks-1.js"
   },
-  "d6d6864c-f230-4a47-9546-c52099e20dc6": {
-    "asset": 1571032676082,
-    "meta": 1571032688964,
-    "relativePath": "Script\\fill-in-blanks-2.js"
-  },
   "7dd5439f-5aa8-41d7-91b8-d7ef78cc5bb4": {
-    "asset": 1571032687579,
-    "meta": 1571032688993,
+    "asset": 1571037221672,
+    "meta": 1571037223267,
     "relativePath": "Script\\fill-in-blanks-3.js"
+  },
+  "4b0dcbb5-c521-4e2e-8ac5-25412a085af7": {
+    "asset": 1571037765898,
+    "meta": 1571037765900,
+    "relativePath": "New Folder"
+  },
+  "bcbb1a22-9e3f-47bc-9158-ead2913ae8c2": {
+    "asset": 1571038101663,
+    "meta": 1571038107681,
+    "relativePath": "Music"
+  },
+  "9aefa8ce-6135-47a2-8fb9-8f5821703f02": {
+    "asset": 1571039309422,
+    "meta": 1571039589195,
+    "relativePath": "Music\\正确！答对了.mp3"
+  },
+  "6aaea377-0dcb-4858-863c-bd02f1aef694": {
+    "asset": 1571039314669,
+    "meta": 1571039314682,
+    "relativePath": "Music\\答题结束音效.mp3"
+  },
+  "9c95c651-0193-42a7-9f51-1be7f8443052": {
+    "asset": 1571038964321,
+    "meta": 1571039579988,
+    "relativePath": "Music\\错误.mp3"
+  },
+  "d6d6864c-f230-4a47-9546-c52099e20dc6": {
+    "asset": 1571039622522,
+    "meta": 1571039624244,
+    "relativePath": "Script\\fill-in-blanks-2.js"
   }
 }

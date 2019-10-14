@@ -32,7 +32,33 @@ cc.Class({
         lbSeqTotal:{//总题目数
             default: null,
             type: cc.Label
-        }
+        },
+		
+		Right:{
+			default: null,
+            type: cc.Prefab
+		},
+		
+		Wrong:{
+			default: null,
+            type: cc.Prefab
+		},
+		
+		mark: {
+			default: null,
+            type : cc.Node
+ 
+        },
+		
+		right_audio: {
+			default: null,
+			type: cc.AudioClip
+		},
+		
+		wrong_audio: {
+			default: null,
+			type: cc.AudioClip
+		}
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -44,6 +70,7 @@ cc.Class({
         this.timecnt = 0;//记录时间
         this.score;//记录做对的题目数量
         this.seq;//记录题号
+		this.count = 0;
 		
     },
 
@@ -201,6 +228,7 @@ cc.Class({
     },
 
     bt_commit_Clicked:function(){
+		var expOne;
         if(this.input.length == 0){
             Alert.show("你还没有填写答案，不能提交哦", null, false);
         }
@@ -208,9 +236,27 @@ cc.Class({
             cc.log("commit successfully");
 			this.refreshSeq();
             if(this.answer == this.input){
+				this.current=cc.audioEngine.play(this.right_audio, false, 20)
                 cc.log("Your answer is right");
+				expOne = cc.instantiate(this.Right);
+				expOne.x= 0;
+				expOne.y= 0;
+				this.mark.addChild(expOne);
+				this.scheduleOnce(function() {
+				// 这里的 this 指向 component
+				this.mark.removeChild(expOne);
+				}, 1);
                 this.refreshScore();
             }else{
+				this.current=cc.audioEngine.play(this.wrong_audio, false, 20)
+				expOne = cc.instantiate(this.Wrong);
+				expOne.x= 0;
+				expOne.y= 0;
+				this.mark.addChild(expOne);
+				this.scheduleOnce(function() {
+				// 这里的 this 指向 component
+				this.mark.removeChild(expOne);
+				}, 1);
                 cc.log("Your answer is wrong");
             }
             this.input = "";
