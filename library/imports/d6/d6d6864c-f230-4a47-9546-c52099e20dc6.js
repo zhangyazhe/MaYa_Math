@@ -242,9 +242,10 @@ cc.Class({
 												Alert.show("你还没有填写答案，不能提交哦", null, false);
 								} else {
 												cc.log("commit successfully");
-												this.refreshSeq();
-												this.allexercise.push(this.lable);
+												cc.log("题目 " + this.lable);
+												this.allexercise.push(this.lable.string);
 												this.allinput.push(this.input);
+												this.refreshSeq();
 												if (this.answer == this.input) {
 																this.current = cc.audioEngine.play(this.right_audio, false, 20);
 																cc.log("Your answer is right");
@@ -273,10 +274,12 @@ cc.Class({
 												}
 												this.input = "";
 												this.lable_input.string = this.input;
-												if (this.seq != this.total) this.defaultGame();else cc.sys.localStorage.setItem('allexercise', JSON.stringify(this.allexercise)); //存储所有题目
-												cc.sys.localStorage.setItem('allinput', JSON.stringify(this.allinput)); //存储用户所有输入
-												cc.sys.localStorage.setItem('rw', JSON.stringify(this.rw)); //存储用户做题情况
-												cc.director.loadScene("lxymenu"); //在这里跳到结果页面
+												if (this.seq != this.total + 1) this.defaultGame();else {
+																cc.sys.localStorage.setItem('allexercise', JSON.stringify(this.allexercise)); //存储所有题目
+																cc.sys.localStorage.setItem('allinput', JSON.stringify(this.allinput)); //存储用户所有输入
+																cc.sys.localStorage.setItem('rw', JSON.stringify(this.rw)); //存储用户做题情况
+																cc.director.loadScene("result_detail");
+												} //在这里跳到结果页面
 								}
 				},
 
@@ -290,7 +293,7 @@ cc.Class({
 												cc.sys.localStorage.setItem('allexercise', JSON.stringify(this.allexercise)); //存储所有题目
 												cc.sys.localStorage.setItem('allinput', JSON.stringify(this.allinput)); //存储用户所有输入
 												cc.sys.localStorage.setItem('rw', JSON.stringify(this.rw)); //存储用户做题情况
-												cc.director.loadScene("lxymenu"); //在这里跳到结果页面
+												cc.director.loadScene("result_detail"); //在这里跳到结果页面
 								}
 				},
 

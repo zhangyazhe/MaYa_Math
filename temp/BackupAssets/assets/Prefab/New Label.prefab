@@ -30,9 +30,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 248,
+      "g": 0,
+      "b": 0,
       "a": 255
     },
     "_contentSize": {
@@ -53,8 +53,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
+      "x": 2,
+      "y": 2,
       "z": 1
     },
     "_eulerAngles": {
@@ -107,7 +107,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "2cc8bfa4-f928-4b0f-8aec-df807e65c7b4"
     },
     "fileId": "8fxV2ZP45OkYDF8Eehmcd+",
     "sync": false
