@@ -1254,13 +1254,8 @@
     "meta": 1570981739790,
     "relativePath": "Scene\\result_scene.fire"
   },
-  "b07f8656-06e8-4d19-a90f-b6d4d677e680": {
-    "asset": 1570967530604,
-    "meta": 1570981739794,
-    "relativePath": "Scene\\SetNum.fire"
-  },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1571026230511,
+    "asset": 1571038867107,
     "meta": 1570967530625,
     "relativePath": "Script"
   },
@@ -1469,23 +1464,13 @@
     "meta": 1571036620888,
     "relativePath": "Script\\grade2_exercise_type.js"
   },
-  "d0386b5d-cf2d-41f5-a9f6-499aa5fe3c6a": {
-    "asset": 1571037216083,
-    "meta": 1571037223266,
-    "relativePath": "Script\\fill-in-blanks-1.js"
-  },
-  "7dd5439f-5aa8-41d7-91b8-d7ef78cc5bb4": {
-    "asset": 1571037221672,
-    "meta": 1571037223267,
-    "relativePath": "Script\\fill-in-blanks-3.js"
-  },
   "4b0dcbb5-c521-4e2e-8ac5-25412a085af7": {
     "asset": 1571037765898,
     "meta": 1571037765900,
     "relativePath": "New Folder"
   },
   "bcbb1a22-9e3f-47bc-9158-ead2913ae8c2": {
-    "asset": 1571038101663,
+    "asset": 1571039417023,
     "meta": 1571038107681,
     "relativePath": "Music"
   },
@@ -1504,9 +1489,29 @@
     "meta": 1571039579988,
     "relativePath": "Music\\错误.mp3"
   },
+  "d0386b5d-cf2d-41f5-a9f6-499aa5fe3c6a": {
+    "asset": 1571041874090,
+    "meta": 1571041889974,
+    "relativePath": "Script\\fill-in-blanks-1.js"
+  },
   "d6d6864c-f230-4a47-9546-c52099e20dc6": {
-    "asset": 1571039622522,
-    "meta": 1571039624244,
+    "asset": 1571044939197,
+    "meta": 1571044979986,
     "relativePath": "Script\\fill-in-blanks-2.js"
+  },
+  "7dd5439f-5aa8-41d7-91b8-d7ef78cc5bb4": {
+    "asset": 1571041883459,
+    "meta": 1571041890158,
+    "relativePath": "Script\\fill-in-blanks-3.js"
+  },
+  "db2e2ba3-96f6-4342-ae54-9f01b302542d": {
+    "asset": 1570967530604,
+    "meta": 1571045085275,
+    "relativePath": "Scene\\SetNum.fire"
+  },
+  "089a9999-fb04-4145-af55-d14325f5b58d": {
+    "asset": 1571045667006,
+    "meta": 1571045667045,
+    "relativePath": "Scene\\result_detail.fire"
   }
 }

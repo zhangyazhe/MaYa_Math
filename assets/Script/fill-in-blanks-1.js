@@ -48,7 +48,17 @@ cc.Class({
 			default: null,
             type : cc.Node
  
-        }
+        },
+		
+		right_audio: {
+			default: null,
+			type: cc.AudioClip
+		},
+		
+		wrong_audio: {
+			default: null,
+			type: cc.AudioClip
+		}
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -60,6 +70,8 @@ cc.Class({
         this.timecnt = 0;//记录时间
         this.score;//记录做对的题目数量
         this.seq;//记录题号
+		this.allexercise;//记录所有的题目
+		this.allinput;//记录用户所有的答案
     },
 
     start () {
@@ -425,6 +437,7 @@ cc.Class({
             cc.log("commit successfully");
 			this.refreshSeq();
             if(this.answer == this.input){
+				this.current=cc.audioEngine.play(this.right_audio, false, 20)
                 cc.log("Your answer is right");
 				expOne = cc.instantiate(this.Right);
 				expOne.x= 0;
@@ -436,6 +449,7 @@ cc.Class({
 				}, 1);
                 this.refreshScore();
             }else{
+				this.current=cc.audioEngine.play(this.wrong_audio, false, 20)
 				expOne = cc.instantiate(this.Wrong);
 				expOne.x= 0;
 				expOne.y= 0;
