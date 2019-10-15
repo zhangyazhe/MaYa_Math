@@ -280,12 +280,12 @@ cc.Class({
     },
 
     bt_skip_Clicked:function(){
-		this.allexercise.push(this.lable);
-		this.allinput.push("你未作答");
+		this.allexercise.push(this.lable.string);
+		this.allinput.push(0);
 		this.rw.push(0);
         this.refreshSeq();
         Alert.show("别担心，稍后可以在错题中查看答案哦^_^", null, false);
-        if(this.seq != this.total)
+        if(this.seq != this.total + 1)
 				this.defaultGame();
 			else{
 				cc.sys.localStorage.setItem('allexercise', JSON.stringify(this.allexercise));			//存储所有题目

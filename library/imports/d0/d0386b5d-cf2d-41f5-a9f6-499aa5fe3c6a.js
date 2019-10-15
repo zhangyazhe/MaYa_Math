@@ -76,8 +76,9 @@ cc.Class({
         this.timecnt = 0; //记录时间
         this.score; //记录做对的题目数量
         this.seq; //记录题号
-        this.allexercise; //记录所有的题目
-        this.allinput; //记录用户所有的答案
+        this.allexercise = []; //记录所有的题目
+        this.allinput = []; //记录用户所有的答案
+        this.rw = []; //记录用户的做题情况
     },
     start: function start() {
         cc.log("start to run");
@@ -440,6 +441,8 @@ cc.Class({
             Alert.show("你还没有填写答案，不能提交哦", null, false);
         } else {
             cc.log("commit successfully");
+            this.allexercise.push(this.lable.string);
+            this.allinput.push(this.input);
             this.refreshSeq();
             if (this.answer == this.input) {
                 this.current = cc.audioEngine.play(this.right_audio, false, 20);
@@ -452,12 +455,14 @@ cc.Class({
                     // 这里的 this 指向 component
                     this.mark.removeChild(expOne);
                 }, 1);
+                this.rw.push(1);
                 this.refreshScore();
             } else {
                 this.current = cc.audioEngine.play(this.wrong_audio, false, 20);
                 expOne = cc.instantiate(this.Wrong);
                 expOne.x = 0;
                 expOne.y = 0;
+                this.rw.push(0);
                 this.mark.addChild(expOne);
                 this.scheduleOnce(function () {
                     // 这里的 this 指向 component
@@ -467,14 +472,27 @@ cc.Class({
             }
             this.input = "";
             this.lable_input.string = this.input;
-            if (this.seq != this.total) this.defaultGame();else cc.director.loadScene("lxymenu"); //在这里跳到结果页面
+            if (this.seq != this.total + 1) this.defaultGame();else {
+                cc.sys.localStorage.setItem('allexercise', JSON.stringify(this.allexercise)); //存储所有题目
+                cc.sys.localStorage.setItem('allinput', JSON.stringify(this.allinput)); //存储用户所有输入
+                cc.sys.localStorage.setItem('rw', JSON.stringify(this.rw)); //存储用户做题情况
+                cc.director.loadScene("result_detail");
+            } //在这里跳到结果页面
         }
     },
 
     bt_skip_Clicked: function bt_skip_Clicked() {
+        this.allexercise.push(this.lable.string);
+        this.allinput.push("你未作答");
+        this.rw.push(0);
         this.refreshSeq();
         Alert.show("别担心，稍后可以在错题中查看答案哦^_^", null, false);
-        if (this.seq != this.total) this.defaultGame();else cc.director.loadScene("lxymenu"); //在这里跳到结果页面
+        if (this.seq != this.total) this.defaultGame();else {
+            cc.sys.localStorage.setItem('allexercise', JSON.stringify(this.allexercise)); //存储所有题目
+            cc.sys.localStorage.setItem('allinput', JSON.stringify(this.allinput)); //存储用户所有输入
+            cc.sys.localStorage.setItem('rw', JSON.stringify(this.rw)); //存储用户做题情况
+            cc.director.loadScene("result_detail"); //在这里跳到结果页面
+        }
     },
 
     //刷新得分

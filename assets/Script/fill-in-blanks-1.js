@@ -70,8 +70,8 @@ cc.Class({
         this.timecnt = 0;//记录时间
         this.score;//记录做对的题目数量
         this.seq;//记录题号
-		this.allexercise;//记录所有的题目
-		this.allinput;//记录用户所有的答案
+		this.allexercise = [];//记录所有的题目
+		this.allinput = [];//记录用户所有的答案
 		this.rw = [];//记录用户的做题情况
     },
 
@@ -436,7 +436,6 @@ cc.Class({
         }
         else{
             cc.log("commit successfully");
-			cc.log("题目 "+this.lable);
 			this.allexercise.push(this.lable.string);
 			this.allinput.push(this.input);
 			this.refreshSeq();
@@ -480,7 +479,7 @@ cc.Class({
     },
 
     bt_skip_Clicked:function(){
-		this.allexercise.push(this.lable);
+		this.allexercise.push(this.lable.string);
 		this.allinput.push("你未作答");
 		this.rw.push(0);
         this.refreshSeq();

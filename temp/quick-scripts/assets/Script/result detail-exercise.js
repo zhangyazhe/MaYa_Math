@@ -1,6 +1,6 @@
-(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/result detail.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '3d0a3Js7JNH950VU5Bg6aMc', 'result detail', __filename);
-// Script/result detail.js
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/result detail-exercise.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, '2c328CM0oxFY4QpT9FDAQc3', 'result detail-exercise', __filename);
+// Script/result detail-exercise.js
 
 'use strict';
 
@@ -44,23 +44,32 @@ cc.Class({
     // use this for initialization
     onLoad: function onLoad() {
         this.value_set = [];
+        this.value2_set = [];
+        this.value3_set = [];
         this.total = JSON.parse(cc.sys.localStorage.getItem('total'));
         this.allexercise = JSON.parse(cc.sys.localStorage.getItem('allexercise'));
         this.allinput = JSON.parse(cc.sys.localStorage.getItem('allinput'));
         this.rw = JSON.parse(cc.sys.localStorage.getItem('rw'));
         // 如果你这里是排行榜，那么你就push排行榜的数据;
         for (var i = 0; i < this.total; i++) {
-            this.value_set.push(this.allexercise[i]);
-
-            cc.log(this.total + this.allexercise[i]);
+            this.allexercise[i] = this.allexercise[i];
+            this.value_set.push(this.allexercise[i]); //所有做的题
+            this.value2_set.push(this.allinput[i]); //用户所有输入
+            this.value3_set.push(this.rw[i]); //用户做题情况
         }
 
-        this.content = this.scroll_view.content;
+        this.content = this.scroll_view.content; //答案横坐标
         this.opt_item_set = [];
+        this.opt_item_set2 = [];
         for (var i = 0; i < this.total; i++) {
             var item = cc.instantiate(this.item_prefab);
             this.content.addChild(item);
+            var item2 = cc.instantiate(this.item_prefab);
+            item2.x = 100;
+            item2.y = 10;
+            this.content.addChild(item2);
             this.opt_item_set.push(item);
+            this.opt_item_set2.push(item2);
         }
 
         this.scroll_view.node.on("scroll-ended", this.on_scroll_ended.bind(this), this);
@@ -75,11 +84,13 @@ cc.Class({
     // 从这个索引开始，加载数据记录到我们的滚动列表里面的选项
     load_record: function load_record(start_index) {
         this.start_index = start_index;
-
         for (var i = 0; i < this.total; i++) {
             var label = this.opt_item_set[i].getComponent(cc.Label);
+            var label2 = this.opt_item_set2[i].getComponent(cc.Label);
             // 显示我们的记录;
             label.string = this.value_set[start_index + i];
+            label2.color = (255, 255, 0, 255);
+            label2.string = this.value2_set[start_index + i];
         }
     },
 
@@ -148,5 +159,5 @@ cc._RF.pop();
             });
         }
         })();
-        //# sourceMappingURL=result detail.js.map
+        //# sourceMappingURL=result detail-exercise.js.map
         
