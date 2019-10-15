@@ -43,6 +43,7 @@ cc.Class({
 		this.total = JSON.parse(cc.sys.localStorage.getItem('total'));
 		this.allexercise = JSON.parse(cc.sys.localStorage.getItem('allexercise'));
 		this.allinput = JSON.parse(cc.sys.localStorage.getItem('allinput'));
+		this.allanswer = JSON.parse(cc.sys.localStorage.getItem('allanswer'));
 		this.rw = JSON.parse(cc.sys.localStorage.getItem('rw'));
         // 如果你这里是排行榜，那么你就push排行榜的数据;
         for(var i = 0; i < this.total; i ++) {
@@ -54,16 +55,10 @@ cc.Class({
 		
         this.content = this.scroll_view.content;						//答案横坐标
         this.opt_item_set = [];
-		this.opt_item_set2 = [];
         for(var i = 0; i < this.total; i ++) {
             var item = cc.instantiate(this.item_prefab);
             this.content.addChild(item);
-			var item2 = cc.instantiate(this.item_prefab);
-			item2.x = 100;
-			item2.y = 10;
-			this.content.addChild(item2);
             this.opt_item_set.push(item);
-			this.opt_item_set2.push(item2);
         }
 
         this.scroll_view.node.on("scroll-ended", this.on_scroll_ended.bind(this), this);
@@ -77,13 +72,42 @@ cc.Class({
 
     // 从这个索引开始，加载数据记录到我们的滚动列表里面的选项
     load_record: function(start_index) {
+		cc.log("你执行这里了吗");
+		var label1;
+		var label2;
+		var label3;
+		var label4;
+		var label5;
         this.start_index = start_index;
         for(var i = 0; i < this.total; i ++) {
-            var label = this.opt_item_set[i].getComponent(cc.Label);
-			var label2 = this.opt_item_set2[i].getComponent(cc.Label);
-            // 显示我们的记录;
-            label.string = this.value_set[start_index + i];
-			label2.string = this.value2_set[start_index + i];
+            label1 = this.opt_item_set[i].getChildByName("num");//题目序号
+			label1.color = new cc.color(105,105,105,0);
+			label2 = this.opt_item_set[i].getChildByName("label");//题目内容
+			label3 = this.opt_item_set[i].getChildByName("input");//用户输入
+			label4 = this.opt_item_set[i].getChildByName("answer");//题目答案
+			label5 = this.opt_item_set[i].getChildByName("wrong");//是否正确
+			label1.getComponent(cc.Label).string = (i+1).toString();
+			label2.getComponent(cc.Label).string = this.allexercise[i];
+			label4.color = new cc.color(34,139,34,0);
+			if(this.rw[i] ==0){
+				if(this.allinput[i]!=0){
+					label3.getComponent(cc.Label).string = this.allinput[i];
+					label5.getComponent(cc.Label).string = "——";
+					label4.getComponent(cc.Label).string = this.allanswer[i];
+				}
+				else{
+					label3.getComponent(cc.Label).string = "未作答";
+					label5.getComponent(cc.Label).string = "";
+					label4.getComponent(cc.Label).string = this.allanswer[i];
+				}
+				
+			}
+			else{
+				label3.getComponent(cc.Label).string = this.allinput[i];
+				label3.color = new cc.color(34,139,34,0);
+				label5.getComponent(cc.Label).string = "";
+				label4.getComponent(cc.Label).string = "";
+			}
         }
     },
 
@@ -137,4 +161,8 @@ cc.Class({
     update: function (dt) {
         this.scrollveiw_load_recode();
     },
+	
+	back: function(){
+        cc.director.loadScene("lxymenu")
+     },
 });

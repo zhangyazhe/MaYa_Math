@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "题目框",
+    "texture": "33e2f92b-8132-47ab-ad75-9cc1459c9c6b",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      625,
+      145
+    ],
+    "offset": [
+      -16.5,
+      0
+    ],
+    "originalSize": [
+      658,
+      145
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -73,6 +73,7 @@ cc.Class({
 		this.count = 0;
 		this.allexercise = [];//记录所有的题目
 		this.allinput = [];//记录用户所有的答案
+		this.allanswer = [];//记录所有的答案
 		this.rw = [];//记录用户的做题情况
     },
 
@@ -239,9 +240,10 @@ cc.Class({
 			cc.log("题目 "+this.lable);
 			this.allexercise.push(this.lable.string);
 			this.allinput.push(this.input);
+			this.allanswer.push(this.answer);
 			this.refreshSeq();
             if(this.answer == this.input){
-				this.current=cc.audioEngine.play(this.right_audio, false, 20)
+				this.current=cc.audioEngine.play(this.right_audio, false, 0.6)
                 cc.log("Your answer is right");
 				expOne = cc.instantiate(this.Right);
 				expOne.x= 0;
@@ -254,7 +256,7 @@ cc.Class({
 				this.rw.push(1);
                 this.refreshScore();
             }else{
-				this.current=cc.audioEngine.play(this.wrong_audio, false, 20);
+				this.current=cc.audioEngine.play(this.wrong_audio, false, 0.6);
 				expOne = cc.instantiate(this.Wrong);
 				expOne.x= 0;
 				expOne.y= 0;
@@ -274,6 +276,7 @@ cc.Class({
 				cc.sys.localStorage.setItem('allexercise', JSON.stringify(this.allexercise));			//存储所有题目
 				cc.sys.localStorage.setItem('allinput', JSON.stringify(this.allinput));			//存储用户所有输入
 				cc.sys.localStorage.setItem('rw', JSON.stringify(this.rw));			//存储用户做题情况
+				cc.sys.localStorage.setItem('allanswer', JSON.stringify(this.allanswer));			//存储用户做题情况
 				cc.director.loadScene("result_detail");}//在这里跳到结果页面
         }
         
@@ -283,6 +286,7 @@ cc.Class({
 		this.allexercise.push(this.lable.string);
 		this.allinput.push(0);
 		this.rw.push(0);
+		this.allanswer.push(this.answer);
         this.refreshSeq();
         Alert.show("别担心，稍后可以在错题中查看答案哦^_^", null, false);
         if(this.seq != this.total + 1)
