@@ -61,7 +61,6 @@ cc.Class({
 		}
     },
 
-    // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         this.input;//用户使用键盘输入的字符串
