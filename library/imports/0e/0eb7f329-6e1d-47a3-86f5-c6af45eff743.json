@@ -6928,6 +6928,12 @@
     "mark": {
       "__id__": 145
     },
+    "right_audio": {
+      "__uuid__": "9aefa8ce-6135-47a2-8fb9-8f5821703f02"
+    },
+    "wrong_audio": {
+      "__uuid__": "9c95c651-0193-42a7-9f51-1be7f8443052"
+    },
     "_id": "73uWmeNjBLMaZoUX7+OSVg"
   }
 ]

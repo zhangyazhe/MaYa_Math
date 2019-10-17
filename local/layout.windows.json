@@ -5,10 +5,10 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": -8,
-      "y": -8,
-      "width": 1552,
-      "height": 840,
+      "x": 0,
+      "y": 23,
+      "width": 1440,
+      "height": 877,
       "layout": {
         "children": [
           {
@@ -18,23 +18,23 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 359.3000183105469,
+                "height": 395.40625,
                 "type": "panel",
-                "width": 247.83750915527344
+                "width": 232
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 360.3000183105469,
+                "height": 397.59375,
                 "type": "panel",
-                "width": 247.83750915527344
+                "width": 232
               }
             ],
-            "height": 721.6000366210938,
+            "height": 795,
             "type": "dock-v",
-            "width": 247.83750915527344
+            "width": 232
           },
           {
             "children": [
@@ -45,23 +45,23 @@
                     "children": [
                       "scene"
                     ],
-                    "height": 453.6000061035156,
+                    "height": 500.546875,
                     "type": "panel",
-                    "width": 593.6124877929688
+                    "width": 557
                   },
                   {
                     "active": 0,
                     "children": [
                       "node-library"
                     ],
-                    "height": 453.6000061035156,
+                    "height": 500.546875,
                     "type": "panel",
-                    "width": 320.7875061035156
+                    "width": 300
                   }
                 ],
-                "height": 453.6000061035156,
+                "height": 500.546875,
                 "type": "dock-h",
-                "width": 916.4000244140625
+                "width": 859
               },
               {
                 "active": 0,
@@ -70,14 +70,14 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 266,
+                "height": 292.4375,
                 "type": "panel",
-                "width": 916.4000244140625
+                "width": 859
               }
             ],
-            "height": 721.6000366210938,
+            "height": 795,
             "type": "dock-v",
-            "width": 916.4000244140625
+            "width": 859
           },
           {
             "active": 0,
@@ -85,9 +85,9 @@
               "inspector",
               "cocos-services"
             ],
-            "height": 721.6000366210938,
+            "height": 795,
             "type": "panel",
-            "width": 367.76251220703125
+            "width": 345
           }
         ],
         "type": "dock-h"
@@ -103,8 +103,7 @@
         "cocos-services",
         "scene"
       ]
-    },
-    "worker": {}
+    }
   },
   "panels": {}
 }

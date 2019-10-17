@@ -73,7 +73,26 @@ cc.Class({
 		this.allexercise = [];//记录所有的题目
 		this.allinput = [];//记录用户所有的答案
 		this.allanswer = [];//记录所有的答案
-		this.rw = [];
+        this.rw = [];
+        this.errorbook = [];
+        this.erbkanswer = [];
+        this.wronganswer = [];
+        this.errorbook  = JSON.parse(cc.sys.localStorage.getItem('errorbook3'));//记录用户老错题
+        this.erbkanswer  = JSON.parse(cc.sys.localStorage.getItem('erbkanswer3'));//记录用户老错题
+        this.wronganswer = JSON.parse(cc.sys.localStorage.getItem('wronganswer3'));//记录用户老错误答案
+        cc.log(this.errorbook+"dhjshjsh");
+        if(this.errorbook == null){
+            this.errorbook = [];
+            cc.sys.localStorage.setItem('errorbook3', JSON.stringify(this.errorbook));//初始化本地错题文件           
+        }
+        if(this.erbkanswer == null){
+            this.erbkanswer = [];
+            cc.sys.localStorage.setItem('erbkanswer3', JSON.stringify(this.erbkanswer));//初始化本地错题文件           
+        }
+        if(this.wronganswer == null){
+            this.wronganswer = [];
+            cc.sys.localStorage.setItem('wronganswer3', JSON.stringify(this.wronganswer));//初始化本地错答案文件           
+        }
     },
 
     start () {
@@ -369,6 +388,9 @@ cc.Class({
 				this.rw.push(1);
                 this.refreshScore();
             }else{
+                this.errorbook.push(this.lable.string);
+                this.erbkanswer.push(this.answer);
+                this.wronganswer.push(this.input);
 				this.current=cc.audioEngine.play(this.wrong_audio, false,0.6);
 				expOne = cc.instantiate(this.Wrong);
 				expOne.x= 0;
@@ -386,6 +408,9 @@ cc.Class({
 			if(this.seq != this.total + 1)
 				this.defaultGame();
 			else{
+                cc.sys.localStorage.setItem('errorbook3', JSON.stringify(this.errorbook));			//存储所有错题
+                cc.sys.localStorage.setItem('erbkanswer3', JSON.stringify(this.erbkanswer));			//存储错题答案
+                cc.sys.localStorage.setItem('wronganswer3', JSON.stringify(this.wronganswer));          //存储错误答案
 				cc.sys.localStorage.setItem('allexercise', JSON.stringify(this.allexercise));			//存储所有题目
 				cc.sys.localStorage.setItem('allinput', JSON.stringify(this.allinput));			//存储用户所有输入
 				cc.sys.localStorage.setItem('rw', JSON.stringify(this.rw));			//存储用户做题情况
@@ -396,6 +421,9 @@ cc.Class({
     },
 
     bt_skip_Clicked:function(){
+        this.errorbook.push(this.lable.string);
+        this.erbkanswer.push(this.answer);
+        this.wronganswer.push(' ');
 		this.allexercise.push(this.lable.string);
 		this.allinput.push(0);
 		this.rw.push(0);
@@ -405,6 +433,9 @@ cc.Class({
         if(this.seq != this.total + 1)
 				this.defaultGame();
 			else{
+                cc.sys.localStorage.setItem('errorbook3', JSON.stringify(this.errorbook));			//存储所有错题
+                cc.sys.localStorage.setItem('erbkanswer3', JSON.stringify(this.erbkanswer));			//存储错题答案
+                cc.sys.localStorage.setItem('wronganswer3', JSON.stringify(this.wronganswer));          //存储错误答案
 				cc.sys.localStorage.setItem('allexercise', JSON.stringify(this.allexercise));			//存储所有题目
 				cc.sys.localStorage.setItem('allinput', JSON.stringify(this.allinput));			//存储用户所有输入
 				cc.sys.localStorage.setItem('rw', JSON.stringify(this.rw));			//存储用户做题情况
