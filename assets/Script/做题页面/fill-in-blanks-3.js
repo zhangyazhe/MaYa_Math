@@ -38,28 +38,28 @@ cc.Class({
             type: cc.Label
         },
 		
-		Right:{
+		Right:{//正确预制体
 			default: null,
             type: cc.Prefab
 		},
 		
-		Wrong:{
+		Wrong:{//错误预制体
 			default: null,
             type: cc.Prefab
 		},
 		
-		mark: {
+		mark: {//预制体父节点
 			default: null,
             type : cc.Node
  
         },
 		
-		right_audio: {
+		right_audio: {//回答正确声音
 			default: null,
 			type: cc.AudioClip
 		},
 		
-		wrong_audio: {
+		wrong_audio: {//回答错误声音
 			default: null,
 			type: cc.AudioClip
 		}
@@ -68,26 +68,26 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        this.input;//用户使用键盘输入的字符串
-        this.answer;//题目的标准答案
-        this.choose;//记录用户选择的题目类型
-        this.timecnt = 0;//记录时间
-        this.score;//记录做对的题目数量
-        this.seq;//记录题号
-		this.allexercise = [];//记录所有的题目
-		this.allinput = [];//记录用户所有的答案
-		this.allanswer = [];//记录所有的答案
+        this.input;					//用户使用键盘输入的字符串
+        this.answer;				//题目的标准答案
+        this.choose;				//记录用户选择的题目类型
+        this.timecnt = 0;			//记录时间
+        this.score;					//记录做对的题目数量
+        this.seq;					//记录题号
+		this.allexercise = [];		//记录所有的题目
+		this.allinput = [];			//记录用户所有的答案
+		this.allanswer = [];		//记录所有的答案
         this.rw = [];
         this.errorbook = [];
         this.erbkanswer = [];
         this.wronganswer = [];
-        this.errorbook  = JSON.parse(cc.sys.localStorage.getItem('errorbook3'));//记录用户老错题
-        this.erbkanswer  = JSON.parse(cc.sys.localStorage.getItem('erbkanswer3'));//记录用户老错题
-        this.wronganswer = JSON.parse(cc.sys.localStorage.getItem('wronganswer3'));//记录用户老错误答案
+        this.errorbook  = JSON.parse(cc.sys.localStorage.getItem('errorbook3'));		//记录用户老错题
+        this.erbkanswer  = JSON.parse(cc.sys.localStorage.getItem('erbkanswer3'));		//记录用户老错题
+        this.wronganswer = JSON.parse(cc.sys.localStorage.getItem('wronganswer3'));		//记录用户老错误答案
         cc.log(this.errorbook+"dhjshjsh");
         if(this.errorbook == null){
             this.errorbook = [];
-            cc.sys.localStorage.setItem('errorbook3', JSON.stringify(this.errorbook));//初始化本地错题文件           
+            cc.sys.localStorage.setItem('errorbook3', JSON.stringify(this.errorbook));	//初始化本地错题文件           
         }
         if(this.erbkanswer == null){
             this.erbkanswer = [];
@@ -103,7 +103,7 @@ cc.Class({
         cc.log("start to run");
         this.input = "";
         this.answer = "";
-        this.choose = JSON.parse(cc.sys.localStorage.getItem('choose'));
+        this.choose = JSON.parse(cc.sys.localStorage.getItem('choose'));//读取用户的选择
         this.score = 0;
         this.defaultGame();
         this.schedule(this.doCountTime,1);//计时
@@ -359,7 +359,7 @@ cc.Class({
         this.lable_input.string = this.input;
     },
 
-    bt_delete_Clicked:function(){
+    bt_delete_Clicked:function(){//删除输入的最后一个字符
         if(this.input.length > 0){
             this.input = this.input.substring(0, this.input.length-1);
         }
@@ -442,11 +442,11 @@ cc.Class({
 				this.defaultGame();
 			else{
                 cc.sys.localStorage.setItem('errorbook3', JSON.stringify(this.errorbook));			//存储所有错题
-                cc.sys.localStorage.setItem('erbkanswer3', JSON.stringify(this.erbkanswer));			//存储错题答案
-                cc.sys.localStorage.setItem('wronganswer3', JSON.stringify(this.wronganswer));          //存储错误答案
-				cc.sys.localStorage.setItem('allexercise', JSON.stringify(this.allexercise));			//存储所有题目
-				cc.sys.localStorage.setItem('allinput', JSON.stringify(this.allinput));			//存储用户所有输入
-				cc.sys.localStorage.setItem('rw', JSON.stringify(this.rw));			//存储用户做题情况
+                cc.sys.localStorage.setItem('erbkanswer3', JSON.stringify(this.erbkanswer));		//存储错题答案
+                cc.sys.localStorage.setItem('wronganswer3', JSON.stringify(this.wronganswer));     	//存储错误答案
+				cc.sys.localStorage.setItem('allexercise', JSON.stringify(this.allexercise));		//存储所有题目
+				cc.sys.localStorage.setItem('allinput', JSON.stringify(this.allinput));				//存储用户所有输入
+				cc.sys.localStorage.setItem('rw', JSON.stringify(this.rw));							//存储用户做题情况
 				cc.sys.localStorage.setItem('allanswer', JSON.stringify(this.allanswer));			//存储用户做题情况
 				cc.director.loadScene("result_detail");//在这里跳到结果页面
 			}
@@ -466,5 +466,16 @@ cc.Class({
 			this.lbSeq.string = this.seq.toString();
         this.lbScore.node.stopAllActions();
         this.lbScore.node.runAction(cc.sequence(cc.scaleTo(0.1,1.3,1.3),cc.scaleTo(0.1,1,1)));
+    },
+	
+	bt_end_Clicked:function(){		//结束练习
+		cc.sys.localStorage.setItem('errorbook1', JSON.stringify(this.errorbook));			//存储所有错题
+        cc.sys.localStorage.setItem('erbkanswer1', JSON.stringify(this.erbkanswer));			//存储错题答案
+        cc.sys.localStorage.setItem('wronganswer1', JSON.stringify(this.wronganswer));          //存储错误答案
+		cc.sys.localStorage.setItem('allexercise', JSON.stringify(this.allexercise));			//存储所有题目
+		cc.sys.localStorage.setItem('allinput', JSON.stringify(this.allinput));			//存储用户所有输入
+		cc.sys.localStorage.setItem('rw', JSON.stringify(this.rw));			//存储用户做题情况
+		cc.sys.localStorage.setItem('allanswer', JSON.stringify(this.allanswer));			//存储用户做题情况
+        cc.director.loadScene("lxymenu");
     },
 });

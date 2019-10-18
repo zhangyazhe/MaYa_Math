@@ -7626,7 +7626,7 @@
     },
     "component": "",
     "_componentId": "35e42o+7PtJC72bVa2mWBUS",
-    "handler": "bt_delete_Clicked",
+    "handler": "bt_remove_Clicked",
     "customEventData": ""
   },
   {

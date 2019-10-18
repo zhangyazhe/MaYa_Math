@@ -4,6 +4,10 @@ cc._RF.push(module, 'd6d68ZM8jBKR5VGxSCZ4g3G', 'fill-in-blanks-2', __filename);
 
 'use strict';
 
+/***********************************************************************************************************************************
+功能：二年级的题目练习
+**********************************************************************************************************************************/
+
 cc.Class({
 				extends: cc.Component,
 
@@ -81,9 +85,9 @@ cc.Class({
 								this.allinput = []; //记录用户所有的答案
 								this.allanswer = []; //记录所有的答案
 								this.rw = []; //记录用户的做题情况
-								this.errorbook = [];
-								this.erbkanswer = [];
-								this.wronganswer = [];
+								this.errorbook = []; //错题本
+								this.erbkanswer = []; //错题答案
+								this.wronganswer = []; //错误答案
 								this.errorbook = JSON.parse(cc.sys.localStorage.getItem('errorbook2')); //记录用户老错题
 								this.erbkanswer = JSON.parse(cc.sys.localStorage.getItem('erbkanswer2')); //记录用户老错题
 								this.wronganswer = JSON.parse(cc.sys.localStorage.getItem('wronganswer2')); //记录用户老错误答案
@@ -125,7 +129,7 @@ cc.Class({
 
 
 				defaultGame: function defaultGame() {
-								//每一类题型的代码逻辑
+								//每一类题型的代码逻辑，11代表一年级第一种题型，12代表一年级第二种题型，22代表二年级第二种题型，以此类推。
 								switch (this.choose) {
 												case 21:
 																this.plus();
@@ -444,16 +448,18 @@ cc.Class({
 				},
 
 				bt_commit_Clicked: function bt_commit_Clicked() {
+								//用户提交答案
 								var expOne;
 								if (this.input.length == 0) {
+												//提示用户未提交
 												Alert.show("你还没有填写答案，不能提交哦", null, false);
 								} else {
 												cc.log("commit successfully");
 												cc.log("题目 " + this.lable);
-												this.allexercise.push(this.lable.string);
-												this.allinput.push(this.input);
-												this.allanswer.push(this.answer);
-												this.refreshSeq();
+												this.allexercise.push(this.lable.string); //存储题目
+												this.allinput.push(this.input); //存储用户输入
+												this.allanswer.push(this.answer); //存储题目答案
+												this.refreshSeq(); //刷新题号
 												if (this.answer == this.input) {
 																this.current = cc.audioEngine.play(this.right_audio, false, 0.6);
 																cc.log("Your answer is right");
@@ -472,7 +478,7 @@ cc.Class({
 																this.erbkanswer.push(this.answer);
 																this.wronganswer.push(this.input);
 																this.current = cc.audioEngine.play(this.wrong_audio, false, 0.6);
-																expOne = cc.instantiate(this.Wrong);
+																expOne = cc.instantiate(this.Wrong); //生成的提示错误预制体
 																expOne.x = 0;
 																expOne.y = 0;
 																this.rw.push(0);
@@ -487,6 +493,7 @@ cc.Class({
 												this.lable_input.string = this.input;
 												cc.log("this.seq" + this.seq);
 												if (this.seq != this.total + 1) this.scheduleOnce(function () {
+																//延迟0.5秒（提供0.5秒时间给用户显示自己是否正确）
 																// 这里的 this 指向 component
 																this.defaultGame();
 												}, 0.5);else {
@@ -535,8 +542,19 @@ cc.Class({
 								if (this.seq != this.total + 1) this.lbSeq.string = this.seq.toString();
 								this.lbScore.node.stopAllActions();
 								this.lbScore.node.runAction(cc.sequence(cc.scaleTo(0.1, 1.3, 1.3), cc.scaleTo(0.1, 1, 1)));
-				}
+				},
 
+				bt_end_Clicked: function bt_end_Clicked() {
+								//结束练习
+								cc.sys.localStorage.setItem('errorbook1', JSON.stringify(this.errorbook)); //存储所有错题
+								cc.sys.localStorage.setItem('erbkanswer1', JSON.stringify(this.erbkanswer)); //存储错题答案
+								cc.sys.localStorage.setItem('wronganswer1', JSON.stringify(this.wronganswer)); //存储错误答案
+								cc.sys.localStorage.setItem('allexercise', JSON.stringify(this.allexercise)); //存储所有题目
+								cc.sys.localStorage.setItem('allinput', JSON.stringify(this.allinput)); //存储用户所有输入
+								cc.sys.localStorage.setItem('rw', JSON.stringify(this.rw)); //存储用户做题情况
+								cc.sys.localStorage.setItem('allanswer', JSON.stringify(this.allanswer)); //存储用户做题情况
+								cc.director.loadScene("lxymenu");
+				}
 });
 
 cc._RF.pop();

@@ -164,7 +164,7 @@ cc.Class({
             this.lbSeqTotal.string = this.errorbook3.length.toString();
             var string = this.errorbook3[this.seq-1];
             cc.sys.localStorage.setItem('total', JSON.stringify(this.errorbook3.length));
-            this.lable.string=string;
+            this.lable.string=string;	
           this.answer=this.erbkanswer3[this.seq-1];
             cc.log("The answer is "+this.erbkanswer);
         },
@@ -311,7 +311,7 @@ cc.Class({
 			}
     },
 
-    bt_delete_Clicked:function(){//删除错题
+    bt_remove_Clicked:function(){//删除错题
         //delete this.errorbook[this.seq-1];
         var dele = this.errorbook.splice(this.seq-1, 1)
         this.lbSeqTotal.string = this.errorbook.length.toString();
@@ -335,7 +335,13 @@ cc.Class({
             var dele = this.wrong_input3.splice(this.seq-1, 1)
             cc.sys.localStorage.setItem('wronganswer3', JSON.stringify(this.wrong_input3));			
         }
-        this.defaultGame();
+		cc.log("debug length = "+this.errorbook.length.toString())
+		if(this.errorbook.length == 0){
+			this.lable.string = "太棒了！错题已经全都学会了"
+		}else{
+			this.defaultGame();
+		}
+        
     },
 
     bt_end_Clicked:function(){		//结束错题练习

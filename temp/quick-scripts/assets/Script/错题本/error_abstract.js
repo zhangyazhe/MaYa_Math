@@ -4,40 +4,53 @@ cc._RF.push(module, 'e3593W4Vp5C5YqA1uNDzVRD', 'error_abstract', __filename);
 
 'use strict';
 
+/***********************************************************************************************************************************
+功能：实现错题本概览功能，使用户浏览错题并可跳转到练习错题的场景
+**********************************************************************************************************************************/
+
 cc.Class({
     extends: cc.Component,
 
     properties: {
         OPT_HEIGHT: 80, // 每项的高度
         PAGE_NUM: 8, // 每页为8个;
-        item_prefab: {
+        item_prefab: { //预制体
             type: cc.Prefab,
             default: null
         },
 
-        scroll_view: {
+        scroll_view: { //滚动窗口
             type: cc.ScrollView,
             default: null
         },
 
-        lbGrade: {
+        lbGrade: { //年级
             type: cc.Label,
             default: null
         }
     },
 
     onLoad: function onLoad() {
-        this.exercise = [];
-        this.input = [];
-        this.answer = [];
+        this.exercise = []; //错题
+        this.input = []; //用户之前的输入（错误答案）
+        this.answer = []; //正确答案
         this.content = this.scroll_view.content; //答案横坐标
         this.opt_item_set = [];
         this.choose;
+        this.errorbook1 = [];
+        this.errorbook2 = [];
+        this.errorbook3 = [];
     },
 
-    start: function start() {},
+    start: function start() {
+        this.choose = 0;
+        this.errorbook1 = JSON.parse(cc.sys.localStorage.getItem('errorbook1')); //加载一年级错题本
+        this.errorbook2 = JSON.parse(cc.sys.localStorage.getItem('errorbook2')); //加载二年级错题本
+        this.errorbook3 = JSON.parse(cc.sys.localStorage.getItem('errorbook3')); //加载三年级错题本
+    },
 
     bt1_clicked: function bt1_clicked() {
+        //用户选择浏览一年级错题
         this.exercise = JSON.parse(cc.sys.localStorage.getItem('errorbook1'));
         this.input = JSON.parse(cc.sys.localStorage.getItem('wronganswer1'));
         this.answer = JSON.parse(cc.sys.localStorage.getItem('erbkanswer1'));
@@ -49,6 +62,7 @@ cc.Class({
     },
 
     bt2_clicked: function bt2_clicked() {
+        //用户选择浏览二年级错题
         this.exercise = JSON.parse(cc.sys.localStorage.getItem('errorbook2'));
         this.input = JSON.parse(cc.sys.localStorage.getItem('wronganswer2'));
         this.answer = JSON.parse(cc.sys.localStorage.getItem('erbkanswer2'));
@@ -60,6 +74,7 @@ cc.Class({
     },
 
     bt3_clicked: function bt3_clicked() {
+        //用户选择浏览三年级错题
         this.exercise = JSON.parse(cc.sys.localStorage.getItem('errorbook3'));
         this.input = JSON.parse(cc.sys.localStorage.getItem('wronganswer3'));
         this.answer = JSON.parse(cc.sys.localStorage.getItem('erbkanswer3'));
@@ -71,14 +86,27 @@ cc.Class({
     },
 
     bt_error_exercise_clicked: function bt_error_exercise_clicked() {
-        cc.director.loadScene("errorbook");
+        //用户选择进行错题练习
+        if (this.choose == 0) {
+            Alert.show("你还没有选择年级，不能练习哦", null, false);
+        } else if (this.choose == 1 && this.errorbook1 == null) {
+            Alert.show("当前没有错题，去做些新题吧", null, false);
+        } else if (this.choose == 2 && this.errorbook2 == null) {
+            Alert.show("当前没有错题，去做些新题吧", null, false);
+        } else if (this.choose == 3 && this.errorbook3 == null) {
+            Alert.show("当前没有错题，去做些新题吧", null, false);
+        } else {
+            cc.director.loadScene("errorbook");
+        }
     },
 
     bt_back_clicked: function bt_back_clicked() {
+        //回到主界面
         cc.director.loadScene("lxymenu");
     },
 
     init: function init() {
+        //初始化
         this.content.removeAllChildren();
         this.opt_item_set.length = 0;
         for (var i = 0; i < this.exercise.length; i++) {
@@ -93,6 +121,7 @@ cc.Class({
     },
 
     load_record: function load_record(start_index) {
+        //加载错题
         var label1;
         var label2;
         var label3;
@@ -123,12 +152,13 @@ cc.Class({
     },
 
     on_scroll_ended: function on_scroll_ended() {
+        //滚动窗口到达底部
         this.scrollveiw_load_recode();
         this.scroll_view.elastic = true;
     },
 
     scrollveiw_load_recode: function scrollveiw_load_recode() {
-        // 向下加载了
+        // 滚动窗口向下加载
         if (this.start_index + this.PAGE_NUM * 3 < this.exercise.length && this.content.y >= this.start_y + this.PAGE_NUM * 2 * this.OPT_HEIGHT) {
             // 动态加载
 
@@ -151,7 +181,7 @@ cc.Class({
             return;
         }
 
-        // 向上加载
+        // 滚动窗口向上加载
         if (this.start_index > 0 && this.content.y <= this.start_y) {
             if (this.scroll_view._autoScrolling) {
                 // 等待这个自动滚动结束以后再做加载
@@ -170,8 +200,9 @@ cc.Class({
         }
         // end 
     },
-    // called every frame, uncomment this function to activate update callback
+
     update: function update(dt) {
+        //更新窗口
         this.scrollveiw_load_recode();
     }
 

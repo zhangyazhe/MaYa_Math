@@ -4,6 +4,10 @@ cc._RF.push(module, 'd0386tdzy1B9an2SZql/jxq', 'fill-in-blanks-1', __filename);
 
 'use strict';
 
+/***********************************************************************************************************************************
+功能：一年级的题目练习
+**********************************************************************************************************************************/
+
 cc.Class({
     extends: cc.Component,
 
@@ -40,28 +44,28 @@ cc.Class({
             type: cc.Label
         },
 
-        Right: {
+        Right: { //回答正确预制体
             default: null,
             type: cc.Prefab
         },
 
-        Wrong: {
+        Wrong: { //回答错误预制体
             default: null,
             type: cc.Prefab
         },
 
-        mark: {
+        mark: { //预制体父节点
             default: null,
             type: cc.Node
 
         },
 
-        right_audio: {
+        right_audio: { //回答正确声音
             default: null,
             type: cc.AudioClip
         },
 
-        wrong_audio: {
+        wrong_audio: { //回答错误声音
             default: null,
             type: cc.AudioClip
         }
@@ -78,9 +82,9 @@ cc.Class({
         this.allinput = []; //记录用户所有的答案
         this.allanswer = []; //记录所有的答案
         this.rw = []; //记录用户的做题情况
-        this.errorbook = [];
-        this.erbkanswer = [];
-        this.wronganswer = [];
+        this.errorbook = []; //错题本
+        this.erbkanswer = []; //错题本答案
+        this.wronganswer = []; //错误答案
         this.errorbook = JSON.parse(cc.sys.localStorage.getItem('errorbook1')); //记录用户老错题
         this.erbkanswer = JSON.parse(cc.sys.localStorage.getItem('erbkanswer1')); //记录用户老错题
         this.wronganswer = JSON.parse(cc.sys.localStorage.getItem('wronganswer1')); //记录用户老错误答案
@@ -121,7 +125,7 @@ cc.Class({
 
 
     defaultGame: function defaultGame() {
-        //每一类题型的代码逻辑
+        //每一类题型的代码逻辑，11代表一年级第一种题型，12代表一年级第二种题型，22代表二年级第二种题型，以此类推。
         switch (this.choose) {
             case 11:
                 this.level_11();
@@ -550,6 +554,10 @@ cc.Class({
         if (this.seq != this.total + 1) this.lbSeq.string = this.seq.toString();
         this.lbScore.node.stopAllActions();
         this.lbScore.node.runAction(cc.sequence(cc.scaleTo(0.1, 1.3, 1.3), cc.scaleTo(0.1, 1, 1)));
+    },
+    //结束练习
+    bt_end_Clicked: function bt_end_Clicked() {
+        cc.director.loadScene("lxymenu");
     }
 });
 

@@ -4,11 +4,11 @@ cc._RF.push(module, '35e42o+7PtJC72bVa2mWBUS', 'errorbk', __filename);
 
 "use strict";
 
-var _cc$Class;
+/***********************************************************************************************************************************
+功能：实现错题练习功能
+**********************************************************************************************************************************/
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-cc.Class((_cc$Class = {
+cc.Class({
     extends: cc.Component,
 
     properties: {
@@ -44,28 +44,28 @@ cc.Class((_cc$Class = {
             type: cc.Label
         },
 
-        Right: {
+        Right: { //正确预制体
             default: null,
             type: cc.Prefab
         },
 
-        Wrong: {
+        Wrong: { //错误预制体
             default: null,
             type: cc.Prefab
         },
 
-        mark: {
+        mark: { //预制体父结点
             default: null,
             type: cc.Node
 
         },
 
-        right_audio: {
+        right_audio: { //回答正确声音
             default: null,
             type: cc.AudioClip
         },
 
-        wrong_audio: {
+        wrong_audio: { //回答错误声音
             default: null,
             type: cc.AudioClip
         }
@@ -107,16 +107,19 @@ cc.Class((_cc$Class = {
         this.erbkanswer1 = JSON.parse(cc.sys.localStorage.getItem('erbkanswer1')); //加载一年级错题本
         this.erbkanswer2 = JSON.parse(cc.sys.localStorage.getItem('erbkanswer2')); //加载二年级错题本
         this.erbkanswer3 = JSON.parse(cc.sys.localStorage.getItem('erbkanswer3')); //加载三年级错题本
-        this.wrong_input1 = JSON.parse(cc.sys.localStorage.getItem('wronganswer1'));
-        this.wrong_input2 = JSON.parse(cc.sys.localStorage.getItem('wronganswer2'));
-        this.wrong_input3 = JSON.parse(cc.sys.localStorage.getItem('wronganswer3'));
+        this.wrong_input1 = JSON.parse(cc.sys.localStorage.getItem('wronganswer1')); //一年级的错题对应的错误答案
+        this.wrong_input2 = JSON.parse(cc.sys.localStorage.getItem('wronganswer2')); //二年级的错题对应的错误答案
+        this.wrong_input3 = JSON.parse(cc.sys.localStorage.getItem('wronganswer3')); //三年级的错题对应的错误答案
         this.schedule(this.doCountTime, 1); //计时
         this.seq = 1;
         if (this.choose == 1) {
+            //选择的是一年级
             this.errorbook = this.errorbook1;
         } else if (this.choose == 2) {
+            //选择的是二年级
             this.errorbook = this.errorbook2;
         } else if (this.choose == 3) {
+            //选择的是三年级
             this.errorbook = this.errorbook3;
         }
         this.defaultGame();
@@ -238,12 +241,14 @@ cc.Class((_cc$Class = {
     },
 
     bt_dot_Clicked: function bt_dot_Clicked() {
+        //小数点按钮
         if (this.input.length < 10 && this.input.length > 0) //最多允许用户输入10位
             this.input += ".";
         this.lable_input.string = this.input;
     },
 
     bt_delete_Clicked: function bt_delete_Clicked() {
+        //删除字符按钮
         if (this.input.length > 0) {
             this.input = this.input.substring(0, this.input.length - 1);
         }
@@ -251,6 +256,7 @@ cc.Class((_cc$Class = {
     },
 
     bt_commit_Clicked: function bt_commit_Clicked() {
+        //提交答案按钮
         var expOne;
         if (this.input.length == 0) {
             Alert.show("你还没有填写答案，不能提交哦", null, false);
@@ -300,6 +306,7 @@ cc.Class((_cc$Class = {
     },
 
     bt_skip_Clicked: function bt_skip_Clicked() {
+        //跳过该题目
         this.allexercise.push(this.lable.string);
         this.allinput.push(0);
         this.rw.push(0);
@@ -312,45 +319,63 @@ cc.Class((_cc$Class = {
             cc.sys.localStorage.setItem('rw', JSON.stringify(this.rw)); //存储用户做题情况
             cc.director.loadScene("result_detail"); //在这里跳到结果页面
         }
-    }
+    },
 
-}, _defineProperty(_cc$Class, "bt_delete_Clicked", function bt_delete_Clicked() {
-    //delete this.errorbook[this.seq-1];
-    var dele = this.errorbook.splice(this.seq - 1, 1);
-    this.lbSeqTotal.string = this.errorbook.length.toString();
-    if (this.choose == 1) {
-        cc.sys.localStorage.setItem('errorbook1', JSON.stringify(this.errorbook));
-        var dele = this.erbkanswer1.splice(this.seq - 1, 1);
-        cc.sys.localStorage.setItem('erbkanswer1', JSON.stringify(this.erbkanswer1));
-        var dele = this.wrong_input1.splice(this.seq - 1, 1);
-        cc.sys.localStorage.setItem('wronganswer1', JSON.stringify(this.wrong_input1));
-    } else if (this.choose == 2) {
-        cc.sys.localStorage.setItem('errorbook2', JSON.stringify(this.errorbook));
-        var dele = this.erbkanswer2.splice(this.seq - 1, 1);
-        cc.sys.localStorage.setItem('erbkanswer2', JSON.stringify(this.erbkanswer2));
-        var dele = this.wrong_input2.splice(this.seq - 1, 1);
-        cc.sys.localStorage.setItem('wronganswer2', JSON.stringify(this.wrong_input2));
-    } else if (this.choose == 3) {
-        cc.sys.localStorage.setItem('errorbook3', JSON.stringify(this.errorbook));
-        var dele = this.erbkanswer3.splice(this.seq - 1, 1);
-        cc.sys.localStorage.setItem('erbkanswer3', JSON.stringify(this.erbkanswer3));
-        var dele = this.wrong_input3.splice(this.seq - 1, 1);
-        cc.sys.localStorage.setItem('wronganswer3', JSON.stringify(this.wrong_input3));
+    bt_remove_Clicked: function bt_remove_Clicked() {
+        //删除错题
+        //delete this.errorbook[this.seq-1];
+        var dele = this.errorbook.splice(this.seq - 1, 1);
+        this.lbSeqTotal.string = this.errorbook.length.toString();
+        if (this.choose == 1) {
+            //一年级
+            cc.sys.localStorage.setItem('errorbook1', JSON.stringify(this.errorbook));
+            var dele = this.erbkanswer1.splice(this.seq - 1, 1);
+            cc.sys.localStorage.setItem('erbkanswer1', JSON.stringify(this.erbkanswer1));
+            var dele = this.wrong_input1.splice(this.seq - 1, 1);
+            cc.sys.localStorage.setItem('wronganswer1', JSON.stringify(this.wrong_input1));
+        } else if (this.choose == 2) {
+            //二年级
+            cc.sys.localStorage.setItem('errorbook2', JSON.stringify(this.errorbook));
+            var dele = this.erbkanswer2.splice(this.seq - 1, 1);
+            cc.sys.localStorage.setItem('erbkanswer2', JSON.stringify(this.erbkanswer2));
+            var dele = this.wrong_input2.splice(this.seq - 1, 1);
+            cc.sys.localStorage.setItem('wronganswer2', JSON.stringify(this.wrong_input2));
+        } else if (this.choose == 3) {
+            //三年级
+            cc.sys.localStorage.setItem('errorbook3', JSON.stringify(this.errorbook));
+            var dele = this.erbkanswer3.splice(this.seq - 1, 1);
+            cc.sys.localStorage.setItem('erbkanswer3', JSON.stringify(this.erbkanswer3));
+            var dele = this.wrong_input3.splice(this.seq - 1, 1);
+            cc.sys.localStorage.setItem('wronganswer3', JSON.stringify(this.wrong_input3));
+        }
+        cc.log("debug length = " + this.errorbook.length.toString());
+        if (this.errorbook.length == 0) {
+            this.lable.string = "太棒了！错题已经全都学会了";
+        } else {
+            this.defaultGame();
+        }
+    },
+
+    bt_end_Clicked: function bt_end_Clicked() {
+        //结束错题练习
+        cc.director.loadScene("lxymenu");
+    },
+
+    //刷新得分
+    refreshScore: function refreshScore() {
+        this.score++;
+        this.lbScore.string = this.score.toString();
+        this.lbScore.node.stopAllActions();
+        this.lbScore.node.runAction(cc.sequence(cc.scaleTo(0.1, 1.3, 1.3), cc.scaleTo(0.1, 1, 1)));
+    },
+    //刷新题号
+    refreshSeq: function refreshSeq() {
+        this.seq++;
+        this.lbSeq.string = this.seq.toString();
+        this.lbScore.node.stopAllActions();
+        this.lbScore.node.runAction(cc.sequence(cc.scaleTo(0.1, 1.3, 1.3), cc.scaleTo(0.1, 1, 1)));
     }
-    this.defaultGame();
-}), _defineProperty(_cc$Class, "bt_end_Clicked", function bt_end_Clicked() {
-    cc.director.loadScene("lxymenu");
-}), _defineProperty(_cc$Class, "refreshScore", function refreshScore() {
-    this.score++;
-    this.lbScore.string = this.score.toString();
-    this.lbScore.node.stopAllActions();
-    this.lbScore.node.runAction(cc.sequence(cc.scaleTo(0.1, 1.3, 1.3), cc.scaleTo(0.1, 1, 1)));
-}), _defineProperty(_cc$Class, "refreshSeq", function refreshSeq() {
-    this.seq++;
-    this.lbSeq.string = this.seq.toString();
-    this.lbScore.node.stopAllActions();
-    this.lbScore.node.runAction(cc.sequence(cc.scaleTo(0.1, 1.3, 1.3), cc.scaleTo(0.1, 1, 1)));
-}), _cc$Class));
+});
 
 cc._RF.pop();
         }

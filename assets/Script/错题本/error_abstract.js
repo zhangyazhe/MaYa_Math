@@ -31,10 +31,16 @@ cc.Class({
         this.content = this.scroll_view.content;						//答案横坐标
         this.opt_item_set = [];
         this.choose;
+		this.errorbook1 = []
+		this.errorbook2 = []
+		this.errorbook3 = []
     },
 
     start:function(){
-
+		this.choose = 0
+		this.errorbook1 = JSON.parse(cc.sys.localStorage.getItem('errorbook1'));//加载一年级错题本
+        this.errorbook2 = JSON.parse(cc.sys.localStorage.getItem('errorbook2'));//加载二年级错题本
+        this.errorbook3 = JSON.parse(cc.sys.localStorage.getItem('errorbook3'));//加载三年级错题本
     },
 
     bt1_clicked:function(){//用户选择浏览一年级错题
@@ -74,7 +80,17 @@ cc.Class({
     },
 
     bt_error_exercise_clicked:function(){//用户选择进行错题练习
-        cc.director.loadScene("errorbook")
+		if(this.choose == 0){
+			Alert.show("你还没有选择年级，不能练习哦", null, false);
+		}else if(this.choose == 1 && this.errorbook1 == null){
+			Alert.show("当前没有错题，去做些新题吧", null, false);
+		}else if(this.choose == 2 && this.errorbook2 == null){
+			Alert.show("当前没有错题，去做些新题吧", null, false);
+		}else if(this.choose == 3 && this.errorbook3 == null){
+			Alert.show("当前没有错题，去做些新题吧", null, false);
+		}else{
+			cc.director.loadScene("errorbook")
+		}
     },
 
     bt_back_clicked:function(){//回到主界面
