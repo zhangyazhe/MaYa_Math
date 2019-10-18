@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '35e42o+7PtJC72bVa2mWBUS', 'errorbk');
-// Script/errorbk.js
+// Script/错题本/errorbk.js
 
 "use strict";
 

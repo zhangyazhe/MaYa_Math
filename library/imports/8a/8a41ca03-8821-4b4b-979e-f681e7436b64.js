@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '8a41coDiCFLS5ee9oHnQ2tk', 'result detail-input');
-// Script/result detail-input.js
+// Script/暂时无用脚本/result detail-input.js
 
 'use strict';
 

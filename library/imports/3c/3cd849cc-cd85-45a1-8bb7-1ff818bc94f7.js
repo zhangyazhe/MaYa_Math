@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '3cd84nMzYVFoYu3H/gYvJT3', 'result');
-// Script/result.js
+// Script/暂时无用脚本/result.js
 
 'use strict';
 

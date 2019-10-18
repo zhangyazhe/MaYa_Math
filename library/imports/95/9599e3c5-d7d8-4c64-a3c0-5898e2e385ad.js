@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '9599ePF19hMZKPAWJji44Wt', 'main_persist');
-// Script/main_persist.js
+// Script/暂时无用脚本/main_persist.js
 
 "use strict";
 

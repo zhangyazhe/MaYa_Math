@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, 'e3593W4Vp5C5YqA1uNDzVRD', 'error_abstract');
-// Script/error_abstract.js
+// Script/错题本/error_abstract.js
 
 'use strict';
 
@@ -41,6 +41,7 @@ cc.Class({
         this.exercise = JSON.parse(cc.sys.localStorage.getItem('errorbook1'));
         this.input = JSON.parse(cc.sys.localStorage.getItem('wronganswer1'));
         this.answer = JSON.parse(cc.sys.localStorage.getItem('erbkanswer1'));
+        if (this.exercise == null) this.exercise = [];
         this.lbGrade.string = "一年级";
         this.choose = 1;
         cc.sys.localStorage.setItem('errorbook_choose', JSON.stringify(this.choose));
@@ -51,6 +52,7 @@ cc.Class({
         this.exercise = JSON.parse(cc.sys.localStorage.getItem('errorbook2'));
         this.input = JSON.parse(cc.sys.localStorage.getItem('wronganswer2'));
         this.answer = JSON.parse(cc.sys.localStorage.getItem('erbkanswer2'));
+        if (this.exercise == null) this.exercise = [];
         this.lbGrade.string = "二年级";
         this.choose = 2;
         cc.sys.localStorage.setItem('errorbook_choose', JSON.stringify(this.choose));
@@ -61,6 +63,7 @@ cc.Class({
         this.exercise = JSON.parse(cc.sys.localStorage.getItem('errorbook3'));
         this.input = JSON.parse(cc.sys.localStorage.getItem('wronganswer3'));
         this.answer = JSON.parse(cc.sys.localStorage.getItem('erbkanswer3'));
+        if (this.exercise == null) this.exercise = [];
         this.lbGrade.string = "三年级";
         this.choose = 3;
         cc.sys.localStorage.setItem('errorbook_choose', JSON.stringify(this.choose));

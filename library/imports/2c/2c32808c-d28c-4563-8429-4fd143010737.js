@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '2c328CM0oxFY4QpT9FDAQc3', 'result detail-exercise');
-// Script/result detail-exercise.js
+// Script/结果页面/result detail-exercise.js
 
 'use strict';
 
@@ -50,6 +50,7 @@ cc.Class({
         this.allexercise = JSON.parse(cc.sys.localStorage.getItem('allexercise'));
         this.allinput = JSON.parse(cc.sys.localStorage.getItem('allinput'));
         this.allanswer = JSON.parse(cc.sys.localStorage.getItem('allanswer'));
+        cc.log(this.allanswer);
         this.rw = JSON.parse(cc.sys.localStorage.getItem('rw'));
         // 如果你这里是排行榜，那么你就push排行榜的数据;
         for (var i = 0; i < this.total; i++) {

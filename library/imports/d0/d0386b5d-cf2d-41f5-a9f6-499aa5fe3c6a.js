@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, 'd0386tdzy1B9an2SZql/jxq', 'fill-in-blanks-1');
-// Script/fill-in-blanks-1.js
+// Script/做题页面/fill-in-blanks-1.js
 
 'use strict';
 
@@ -66,8 +66,6 @@ cc.Class({
             type: cc.AudioClip
         }
     },
-
-    // LIFE-CYCLE CALLBACKS:
 
     onLoad: function onLoad() {
         this.input; //用户使用键盘输入的字符串
@@ -475,7 +473,7 @@ cc.Class({
                 this.scheduleOnce(function () {
                     // 这里的 this 指向 component
                     this.mark.removeChild(expOne);
-                }, 1);
+                }, 0.5);
                 this.rw.push(1);
                 this.refreshScore();
             } else {
@@ -491,12 +489,15 @@ cc.Class({
                 this.scheduleOnce(function () {
                     // 这里的 this 指向 component
                     this.mark.removeChild(expOne);
-                }, 1);
+                }, 0.5);
                 cc.log("Your answer is wrong");
             }
             this.input = "";
             this.lable_input.string = this.input;
-            if (this.seq != this.total + 1) this.defaultGame();else {
+            if (this.seq != this.total + 1) this.scheduleOnce(function () {
+                // 这里的 this 指向 component
+                this.defaultGame();
+            }, 0.5);else {
                 cc.sys.localStorage.setItem('errorbook1', JSON.stringify(this.errorbook)); //存储所有错题
                 cc.sys.localStorage.setItem('erbkanswer1', JSON.stringify(this.erbkanswer)); //存储错题答案
                 cc.sys.localStorage.setItem('wronganswer1', JSON.stringify(this.wronganswer)); //存储错误答案
@@ -516,16 +517,22 @@ cc.Class({
         this.allexercise.push(this.lable.string);
         this.allinput.push(0);
         this.rw.push(0);
+        cc.log(this.answer + "跳过答案");
         this.allanswer.push(this.answer);
         this.refreshSeq();
+        this.current = cc.audioEngine.play(this.wrong_audio, false, 0.6);
         Alert.show("别担心，稍后可以在错题中查看答案哦^_^", null, false);
+        this.input = "";
+        this.lable_input.string = this.input;
         if (this.seq != this.total + 1) this.defaultGame();else {
             cc.sys.localStorage.setItem('errorbook1', JSON.stringify(this.errorbook)); //存储所有错题
             cc.sys.localStorage.setItem('erbkanswer1', JSON.stringify(this.erbkanswer)); //存储错题答案
             cc.sys.localStorage.setItem('wronganswer1', JSON.stringify(this.wronganswer)); //存储错误答案
             cc.sys.localStorage.setItem('allexercise', JSON.stringify(this.allexercise)); //存储所有题目
             cc.sys.localStorage.setItem('allinput', JSON.stringify(this.allinput)); //存储用户所有输入
+            cc.sys.localStorage.setItem('allanswer', JSON.stringify(this.allanswer)); //存储用户做题情况
             cc.sys.localStorage.setItem('rw', JSON.stringify(this.rw)); //存储用户做题情况
+            cc.log(this.allanswer);
             cc.director.loadScene("result_detail"); //在这里跳到结果页面
         }
     },
@@ -540,7 +547,7 @@ cc.Class({
     //刷新题号
     refreshSeq: function refreshSeq() {
         this.seq++;
-        this.lbSeq.string = this.seq.toString();
+        if (this.seq != this.total + 1) this.lbSeq.string = this.seq.toString();
         this.lbScore.node.stopAllActions();
         this.lbScore.node.runAction(cc.sequence(cc.scaleTo(0.1, 1.3, 1.3), cc.scaleTo(0.1, 1, 1)));
     }

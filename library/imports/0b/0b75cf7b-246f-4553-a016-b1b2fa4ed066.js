@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '0b75c97JG9FU6AWsbL6TtBm', 'errorscript');
-// Script/errorscript.js
+// Script/暂时无用脚本/errorscript.js
 
 "use strict";
 
