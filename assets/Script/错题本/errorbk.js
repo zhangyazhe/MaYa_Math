@@ -87,7 +87,7 @@ cc.Class({
         this.errorbook = [];//本次用户选择的年纪的错题本
         this.wrong_input1 = []
         this.wrong_input2 = []
-        this.wronginput3 = []
+        this.wrong_input3 = []
     },
 
     start () {
