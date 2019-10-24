@@ -65,7 +65,6 @@ cc.Class({
 		}
     },
 
-
     onLoad () {
         this.input;						//用户使用键盘输入的字符串
         this.answer;					//题目的标准答案
@@ -80,9 +79,9 @@ cc.Class({
         this.errorbook = [];			//错题本
         this.erbkanswer = [];			//错题本答案
         this.wronganswer = [];			//错误答案
-        this.errorbook  = JSON.parse(cc.sys.localStorage.getItem('errorbook1'));//记录用户老错题
-        this.erbkanswer  = JSON.parse(cc.sys.localStorage.getItem('erbkanswer1'));//记录用户老错题
-        this.wronganswer = JSON.parse(cc.sys.localStorage.getItem('wronganswer1'));//记录用户老错误答案
+        this.errorbook  = JSON.parse(cc.sys.localStorage.getItem('errorbook1'));//记录用户旧错题
+        this.erbkanswer  = JSON.parse(cc.sys.localStorage.getItem('erbkanswer1'));//记录用户旧错题
+        this.wronganswer = JSON.parse(cc.sys.localStorage.getItem('wronganswer1'));//记录用户旧错误答案
         if(this.errorbook == null){
             this.errorbook = [];
             cc.sys.localStorage.setItem('errorbook1', JSON.stringify(this.errorbook));//初始化本地错题文件           
