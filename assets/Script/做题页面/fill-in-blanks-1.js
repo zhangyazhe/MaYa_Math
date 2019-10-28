@@ -293,7 +293,7 @@ cc.Class({
         string += " = ";
         this.lable.string=string;
         this.answer=answer.toString();
-        cc.log("The answer is "+this.answer);
+        cc.log("The answer is " + this.answer);
 
     },
     
@@ -336,7 +336,7 @@ cc.Class({
         }
         this.lable.string=string;
         this.answer=answer.toString();
-        cc.log("The answer is "+this.answer);
+        cc.log("The answer is " + this.answer);
     },
 
         level_18:function(){//10~20加减
@@ -375,7 +375,7 @@ cc.Class({
             }
             this.lable.string=string;
             this.answer=answer.toString();
-            cc.log("The answer is "+this.answer);
+            cc.log("The answer is " + this.answer);
         
     },    
 
