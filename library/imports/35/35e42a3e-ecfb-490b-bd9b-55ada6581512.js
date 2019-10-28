@@ -91,9 +91,9 @@ cc.Class({
         this.erbkanswer2 = []; //记录二年级错题答案
         this.erbkanswer3 = []; //记录三年级错题答案
         this.errorbook = []; //本次用户选择的年纪的错题本
-        this.wrong_input1 = [];
-        this.wrong_input2 = [];
-        this.wronginput3 = [];
+        this.wrong_input1 = []; //记录用户的一年级错误答案
+        this.wrong_input2 = []; //记录用户的二年级错误答案
+        this.wrong_input3 = []; //记录用户的三年级错误答案
     },
     start: function start() {
         cc.log("start to run");

@@ -9,27 +9,27 @@ cc._RF.push(module, 'cac6dfGQXZP3qNEOJxb8mql', 'menuscript', __filename);
 **********************************************************************************************************************************/
 
 cc.Class({
-    extends: cc.Component,
+   extends: cc.Component,
 
-    properties: {},
+   properties: {},
 
-    start: function start() {},
+   start: function start() {},
 
 
-    toGrd1: function toGrd1() {
-        cc.director.loadScene("exercise type-1"); //加载场景
-    },
+   toGrd1: function toGrd1() {
+      cc.director.loadScene("exercise type-1"); //加载场景
+   },
 
-    toGrd2: function toGrd2() {
-        cc.director.loadScene("exercise type-2"); //加载场景
-    },
+   toGrd2: function toGrd2() {
+      cc.director.loadScene("exercise type-2"); //加载场景
+   },
 
-    toGrd3: function toGrd3() {
-        cc.director.loadScene("exercise type-3"); //加载场景
-    },
-    toErb: function toErb() {
-        cc.director.loadScene("error_abstract"); //加载场景
-    }
+   toGrd3: function toGrd3() {
+      cc.director.loadScene("exercise type-3"); //加载场景
+   },
+   toErb: function toErb() {
+      cc.director.loadScene("error_abstract"); //加载场景
+   }
 
 });
 

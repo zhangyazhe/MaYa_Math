@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "米色按钮",
+    "texture": "6d8cd774-bbb0-484f-a348-7216889821cf",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      32,
+      33
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      34,
+      34
+    ],
+    "capInsets": [
+      2,
+      2,
+      2,
+      2
+    ]
+  }
+}
