@@ -65,7 +65,6 @@ cc.Class({
 		}
     },
 
-
     onLoad () {
         this.input;						//用户使用键盘输入的字符串
         this.answer;					//题目的标准答案
