@@ -65,6 +65,7 @@ cc.Class({
 		}
     },
 
+
     onLoad () {
         this.input;						//用户使用键盘输入的字符串
         this.answer;					//题目的标准答案
@@ -269,7 +270,7 @@ cc.Class({
         string += " = ";
         this.lable.string=string;
         this.answer=answer.toString();
-        cc.log("The answer is "+this.answer);
+        cc.log("The answer is " + this.answer);
 
     },
 
