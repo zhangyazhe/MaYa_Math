@@ -28,6 +28,9 @@ cc.Class({
      },
      toErb: function(){
          cc.director.loadScene("error_abstract");		//加载场景
-	 }
-     
+     },
+
+     back: function(){
+      cc.director.loadScene("lxybegin")		//加载场景
+   } 
 });

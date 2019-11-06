@@ -29,8 +29,11 @@ cc.Class({
    },
    toErb: function toErb() {
       cc.director.loadScene("error_abstract"); //加载场景
-   }
+   },
 
+   back: function back() {
+      cc.director.loadScene("lxybegin"); //加载场景
+   }
 });
 
 cc._RF.pop();

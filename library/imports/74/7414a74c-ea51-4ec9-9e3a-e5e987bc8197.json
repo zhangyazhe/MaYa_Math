@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "20170305160613_YeXMx",
+    "texture": "9c999b8b-c65e-47b9-8a95-da8cb3a55630",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1200,
+      2130
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1200,
+      2130
+    ],
+    "capInsets": [
+      342,
+      592,
+      385,
+      712
+    ]
+  }
+}

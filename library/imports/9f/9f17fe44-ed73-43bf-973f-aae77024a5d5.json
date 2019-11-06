@@ -1,8 +1,8 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "米色按钮",
-    "texture": "6d8cd774-bbb0-484f-a348-7216889821cf",
+    "name": "黄色按钮",
+    "texture": "5d7ad947-375e-4687-b5ff-3f7c2806a28b",
     "atlas": "",
     "rect": [
       1,
@@ -19,10 +19,10 @@
       34
     ],
     "capInsets": [
-      2,
-      2,
-      2,
-      2
+      3,
+      3,
+      3,
+      4
     ]
   }
 }
