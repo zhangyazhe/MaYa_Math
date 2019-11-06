@@ -1,70 +1,283 @@
-2019-11-06T09:07:41.760Z - normal: Load ~/.CocosCreator/settings.json
-2019-11-06T09:07:41.817Z - normal: Initializing Asset Database
-2019-11-06T09:07:41.820Z - normal: checking language setting...
-2019-11-06T09:07:41.820Z - normal: Language: zh
-2019-11-06T09:07:42.612Z - success: preview server running at http://localhost:7456
-2019-11-06T09:07:42.632Z - success: protocol editor-framework registered
-2019-11-06T09:07:42.632Z - success: protocol app registered
-2019-11-06T09:07:42.632Z - success: protocol theme registered
-2019-11-06T09:07:42.632Z - success: protocol packages registered
-2019-11-06T09:07:42.632Z - success: protocol uuid registerred
-2019-11-06T09:07:42.632Z - success: protocol db registerred
-2019-11-06T09:07:42.633Z - success: protocol thumbnail registerred
-2019-11-06T09:07:42.633Z - success: protocol unpack registerred
-2019-11-06T09:07:42.633Z - success: protocol disable-commonjs registerred
-2019-11-06T09:07:43.086Z - normal: connected!
-2019-11-06T09:07:43.088Z - normal: Check project /Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math
-2019-11-06T09:07:43.091Z - normal: Initializing project /Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math
-2019-11-06T09:07:43.414Z - normal: Initializing Cocos2d
-2019-11-06T09:07:44.212Z - normal: Initializing engine extends
-2019-11-06T09:07:44.240Z - success: asset-db-debugger loaded
-2019-11-06T09:07:44.243Z - success: baidu-adapter loaded
-2019-11-06T09:07:44.246Z - success: color-picker loaded
-2019-11-06T09:07:44.344Z - success: fb-audience-network loaded
-2019-11-06T09:07:44.396Z - success: fb-live-stream loaded
-2019-11-06T09:07:44.400Z - success: google-play-instant loaded
-2019-11-06T09:07:44.408Z - success: huawei-runtime loaded
-2019-11-06T09:07:44.673Z - success: cpk-publish loaded
-2019-11-06T09:07:44.676Z - success: jsb-adapter loaded
-2019-11-06T09:07:44.684Z - success: oppo-runtime loaded
-2019-11-06T09:07:44.691Z - success: package-manager loaded
-2019-11-06T09:07:44.844Z - success: qqplay-adapter loaded
-2019-11-06T09:07:44.850Z - success: runtime-dev-tools loaded
-2019-11-06T09:07:44.857Z - success: sdkbox loaded
-2019-11-06T09:07:44.863Z - success: tester loaded
-2019-11-06T09:07:44.869Z - success: ui-grid loaded
-2019-11-06T09:07:44.876Z - success: ui-kit-preview-extra loaded
-2019-11-06T09:07:44.882Z - success: ui-kit-preview loaded
-2019-11-06T09:07:44.888Z - success: ui-kit loaded
-2019-11-06T09:07:44.894Z - success: ui-tree loaded
-2019-11-06T09:07:44.902Z - success: vivo-runtime loaded
-2019-11-06T09:07:44.904Z - success: weapp-adapter loaded
-2019-11-06T09:07:44.907Z - success: xiaomi-adapter loaded
-2019-11-06T09:07:44.946Z - success: assets loaded
-2019-11-06T09:07:44.949Z - success: builder loaded
-2019-11-06T09:07:45.264Z - success: cocos-services loaded
-2019-11-06T09:07:45.272Z - success: console loaded
-2019-11-06T09:07:45.310Z - success: fb-instant-games loaded
-2019-11-06T09:07:45.314Z - success: game-window loaded
-2019-11-06T09:07:45.315Z - success: google-instant-games loaded
-2019-11-06T09:07:45.322Z - success: hierarchy loaded
-2019-11-06T09:07:45.327Z - success: inspector loaded
-2019-11-06T09:07:45.328Z - success: keystore loaded
-2019-11-06T09:07:45.333Z - success: node-library loaded
-2019-11-06T09:07:45.335Z - success: package-asset loaded
-2019-11-06T09:07:45.336Z - success: preferences loaded
-2019-11-06T09:07:45.339Z - success: project-exporter loaded
-2019-11-06T09:07:45.344Z - success: project-importer loaded
-2019-11-06T09:07:45.347Z - success: project-settings loaded
-2019-11-06T09:07:45.352Z - success: scene loaded
-2019-11-06T09:07:45.354Z - success: simulator-debugger loaded
-2019-11-06T09:07:45.355Z - success: sprite-editor loaded
-2019-11-06T09:07:45.359Z - success: store loaded
-2019-11-06T09:07:45.367Z - success: timeline loaded
-2019-11-06T09:07:45.371Z - success: xiaomi-runtime loaded
-2019-11-06T09:07:46.398Z - info: Cocos Services load base data!
-2019-11-06T09:07:46.829Z - normal: Loading packages
-2019-11-06T09:07:46.838Z - normal: Watching packages
-2019-11-06T09:07:46.928Z - normal: Run Application
-2019-11-06T09:08:08.229Z - info: Cocos Services reload base data!
-2019-11-06T09:30:49.780Z - info: shutdown preview server
+2019-11-06T12:06:34.920Z - normal: Load ~/.CocosCreator/settings.json
+2019-11-06T12:06:34.977Z - normal: Initializing Asset Database
+2019-11-06T12:06:34.980Z - normal: checking language setting...
+2019-11-06T12:06:34.980Z - normal: Language: zh
+2019-11-06T12:06:35.783Z - success: preview server running at http://localhost:7456
+2019-11-06T12:06:35.796Z - success: protocol editor-framework registered
+2019-11-06T12:06:35.796Z - success: protocol app registered
+2019-11-06T12:06:35.796Z - success: protocol theme registered
+2019-11-06T12:06:35.796Z - success: protocol packages registered
+2019-11-06T12:06:35.796Z - success: protocol uuid registerred
+2019-11-06T12:06:35.796Z - success: protocol db registerred
+2019-11-06T12:06:35.796Z - success: protocol thumbnail registerred
+2019-11-06T12:06:35.796Z - success: protocol unpack registerred
+2019-11-06T12:06:35.796Z - success: protocol disable-commonjs registerred
+2019-11-06T12:06:36.014Z - normal: connected!
+2019-11-06T12:06:36.016Z - normal: Check project /Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math
+2019-11-06T12:06:36.019Z - normal: Initializing project /Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math
+2019-11-06T12:06:36.413Z - normal: Initializing Cocos2d
+2019-11-06T12:06:37.109Z - normal: Initializing engine extends
+2019-11-06T12:06:37.143Z - success: asset-db-debugger loaded
+2019-11-06T12:06:37.150Z - success: baidu-adapter loaded
+2019-11-06T12:06:37.154Z - success: color-picker loaded
+2019-11-06T12:06:37.280Z - success: fb-audience-network loaded
+2019-11-06T12:06:37.341Z - success: fb-live-stream loaded
+2019-11-06T12:06:37.345Z - success: google-play-instant loaded
+2019-11-06T12:06:37.351Z - success: huawei-runtime loaded
+2019-11-06T12:06:37.620Z - success: cpk-publish loaded
+2019-11-06T12:06:37.622Z - success: jsb-adapter loaded
+2019-11-06T12:06:37.630Z - success: oppo-runtime loaded
+2019-11-06T12:06:37.639Z - success: package-manager loaded
+2019-11-06T12:06:37.803Z - success: qqplay-adapter loaded
+2019-11-06T12:06:37.806Z - success: runtime-dev-tools loaded
+2019-11-06T12:06:37.814Z - success: sdkbox loaded
+2019-11-06T12:06:37.820Z - success: tester loaded
+2019-11-06T12:06:37.827Z - success: ui-grid loaded
+2019-11-06T12:06:37.832Z - success: ui-kit-preview-extra loaded
+2019-11-06T12:06:37.837Z - success: ui-kit-preview loaded
+2019-11-06T12:06:37.841Z - success: ui-kit loaded
+2019-11-06T12:06:37.845Z - success: ui-tree loaded
+2019-11-06T12:06:37.853Z - success: vivo-runtime loaded
+2019-11-06T12:06:37.855Z - success: weapp-adapter loaded
+2019-11-06T12:06:37.858Z - success: xiaomi-adapter loaded
+2019-11-06T12:06:37.895Z - success: assets loaded
+2019-11-06T12:06:37.899Z - success: builder loaded
+2019-11-06T12:06:38.196Z - success: cocos-services loaded
+2019-11-06T12:06:38.202Z - success: console loaded
+2019-11-06T12:06:38.230Z - success: fb-instant-games loaded
+2019-11-06T12:06:38.236Z - success: game-window loaded
+2019-11-06T12:06:38.237Z - success: google-instant-games loaded
+2019-11-06T12:06:38.242Z - success: hierarchy loaded
+2019-11-06T12:06:38.249Z - success: inspector loaded
+2019-11-06T12:06:38.251Z - success: keystore loaded
+2019-11-06T12:06:38.257Z - success: node-library loaded
+2019-11-06T12:06:38.259Z - success: package-asset loaded
+2019-11-06T12:06:38.260Z - success: preferences loaded
+2019-11-06T12:06:38.263Z - success: project-exporter loaded
+2019-11-06T12:06:38.269Z - success: project-importer loaded
+2019-11-06T12:06:38.273Z - success: project-settings loaded
+2019-11-06T12:06:38.279Z - success: scene loaded
+2019-11-06T12:06:38.281Z - success: simulator-debugger loaded
+2019-11-06T12:06:38.282Z - success: sprite-editor loaded
+2019-11-06T12:06:38.286Z - success: store loaded
+2019-11-06T12:06:38.294Z - success: timeline loaded
+2019-11-06T12:06:38.300Z - success: xiaomi-runtime loaded
+2019-11-06T12:06:39.703Z - normal: Loading packages
+2019-11-06T12:06:39.713Z - normal: Watching packages
+2019-11-06T12:06:39.794Z - normal: Run Application
+2019-11-06T12:06:40.255Z - info: Cocos Services load base data!
+2019-11-06T12:07:35.486Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math/build",
+  "debug": false,
+  "dest": "/Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math/build/web-mobile",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49",
+    "3cfe3ea4-75f2-478e-b790-6b2a77f6b83b",
+    "6903db39-8519-4275-a054-82cef0764b56",
+    "73ca868e-6916-4640-8d20-242465ad65f2",
+    "8ef83713-865a-4812-9953-d94c672d6a2b",
+    "39df5157-09c3-4cf4-81e1-d5a6e9299284",
+    "089a9999-fb04-4145-af55-d14325f5b58d",
+    "57edc929-0a6b-4229-8f83-cd15b0aaa4d9",
+    "bd760380-3a64-4da4-962f-1baaee3201ba",
+    "197233e7-996b-4fc7-8a6c-19fa10c86f92",
+    "9696770f-008c-4c98-8ff5-a23b69d821b0",
+    "b47bf375-d9d8-430e-9b84-dd2ca9731c30",
+    "db2e2ba3-96f6-4342-ae54-9f01b302542d",
+    "4b2bafbd-7beb-4ff6-ae54-3de73babbc77",
+    "c10f19da-aeaa-45af-b66b-0212a02ef313"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "MaYa_Math",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "separate_engine": false,
+    "subContext": ""
+  },
+  "xxteaKey": "938ca349-322a-4a",
+  "zipCompressJs": true,
+  "project": "/Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math",
+  "projectName": "MaYa_Math",
+  "debugBuildWorker": false
+}
+2019-11-06T12:07:35.490Z - normal: Building /Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math
+2019-11-06T12:07:35.490Z - normal: Destination /Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math/build/web-mobile
+2019-11-06T12:07:35.598Z - normal: Delete /Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math/build/web-mobile/subpackages/**/*,/Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math/build/web-mobile/**/*
+2019-11-06T12:07:37.751Z - normal: Start building assets
+2019-11-06T12:07:37.752Z - normal: Start spawn build-worker
+2019-11-06T12:07:38.249Z - normal: Finish spawn build-worker
+2019-11-06T12:07:38.249Z - normal: Start init build-worker
+2019-11-06T12:07:40.423Z - normal: Finish init build-worker
+2019-11-06T12:07:40.423Z - normal: Start build-assets in worker
+2019-11-06T12:07:40.723Z - warn: Script attached to "New Button" in scene "result_scene.fire" is missing or invalid. Detailed information:
+Node path: "Canvas/New Button"
+Asset url: "db://assets/Scene/暂时没有用到的场景/result_scene.fire"
+Script UUID: "685cef29-f57b-4a7f-91bc-bd7c1bb0bf99"
+Class ID: "685ce8p9XtKf5G8vXwbsL+Z"
+
+2019-11-06T12:07:41.547Z - normal: Finish build-assets in worker
+2019-11-06T12:07:41.557Z - normal: Finish building assets
+2019-11-06T12:07:41.613Z - normal: Start building plugin scripts
+2019-11-06T12:07:41.822Z - normal: Finish building plugin scripts
+2019-11-06T12:07:41.830Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-11-06T12:07:41.836Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
+2019-11-06T12:07:41.850Z - normal: Built to "/Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math/build/web-mobile" successfully
+2019-11-06T12:09:09.171Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math/build",
+  "debug": false,
+  "dest": "/Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math/build/web-mobile",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "9696770f-008c-4c98-8ff5-a23b69d821b0",
+    "3cfe3ea4-75f2-478e-b790-6b2a77f6b83b",
+    "6903db39-8519-4275-a054-82cef0764b56",
+    "73ca868e-6916-4640-8d20-242465ad65f2",
+    "2d2f792f-a40c-49bb-a189-ed176a246e49",
+    "39df5157-09c3-4cf4-81e1-d5a6e9299284",
+    "089a9999-fb04-4145-af55-d14325f5b58d",
+    "57edc929-0a6b-4229-8f83-cd15b0aaa4d9",
+    "bd760380-3a64-4da4-962f-1baaee3201ba",
+    "197233e7-996b-4fc7-8a6c-19fa10c86f92",
+    "8ef83713-865a-4812-9953-d94c672d6a2b",
+    "b47bf375-d9d8-430e-9b84-dd2ca9731c30",
+    "db2e2ba3-96f6-4342-ae54-9f01b302542d",
+    "4b2bafbd-7beb-4ff6-ae54-3de73babbc77",
+    "c10f19da-aeaa-45af-b66b-0212a02ef313"
+  ],
+  "sourceMaps": false,
+  "startScene": "9696770f-008c-4c98-8ff5-a23b69d821b0",
+  "template": "link",
+  "title": "MaYa_Math",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "separate_engine": false,
+    "subContext": ""
+  },
+  "xxteaKey": "938ca349-322a-4a",
+  "zipCompressJs": true,
+  "project": "/Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math",
+  "projectName": "MaYa_Math",
+  "debugBuildWorker": false
+}
+2019-11-06T12:09:09.173Z - normal: Building /Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math
+2019-11-06T12:09:09.174Z - normal: Destination /Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math/build/web-mobile
+2019-11-06T12:09:09.174Z - normal: Delete /Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math/build/web-mobile/subpackages/**/*,/Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math/build/web-mobile/**/*
+2019-11-06T12:09:11.257Z - normal: Start building assets
+2019-11-06T12:09:11.258Z - normal: Start spawn build-worker
+2019-11-06T12:09:11.755Z - normal: Finish spawn build-worker
+2019-11-06T12:09:11.755Z - normal: Start init build-worker
+2019-11-06T12:09:13.940Z - normal: Finish init build-worker
+2019-11-06T12:09:13.940Z - normal: Start build-assets in worker
+2019-11-06T12:09:14.213Z - warn: Script attached to "New Button" in scene "result_scene.fire" is missing or invalid. Detailed information:
+Node path: "Canvas/New Button"
+Asset url: "db://assets/Scene/暂时没有用到的场景/result_scene.fire"
+Script UUID: "685cef29-f57b-4a7f-91bc-bd7c1bb0bf99"
+Class ID: "685ce8p9XtKf5G8vXwbsL+Z"
+
+2019-11-06T12:09:15.034Z - normal: Finish build-assets in worker
+2019-11-06T12:09:15.037Z - normal: Finish building assets
+2019-11-06T12:09:15.079Z - normal: Start building plugin scripts
+2019-11-06T12:09:15.190Z - normal: Finish building plugin scripts
+2019-11-06T12:09:15.194Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-11-06T12:09:15.198Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
+2019-11-06T12:09:15.209Z - normal: Built to "/Users/zhangyazhe/MyFiles/wx_mini/MaYa_Math/build/web-mobile" successfully
+2019-11-06T12:10:51.862Z - info: shutdown preview server
