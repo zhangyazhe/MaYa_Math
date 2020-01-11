@@ -7,4 +7,4 @@
 - 年级选择：一年级/二年级/三年级
 - 题型选择：根据小学数学课本的教学内容，每个年级有相应的不同难度、不同类型的题型
 - 题目数量：休闲练习--10道题/普通练习--30道题/认真练习--50道题
-- 点击链接可体验 https://zhangyazhe.github.io/maya_demonstration/
+- 点击链接可体验（手机访问效果更佳） https://zhangyazhe.github.io/maya_demonstration/
